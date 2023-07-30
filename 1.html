@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="body-index">
+ <div class="wrapper">  
+  @@include('var/_header.html')    
+  <main class="main">
+    <div class="hero">
+      <div class="contain">
+        <h1>Каталог поставщиков продуктов питания</h1>
+        <p>Food Suppliers — крупнейший каталог поставщиков пищевой промышленности. В нашей базе собраны и структурированы производители, дистрибьюторы и другие поставщики продуктов питания и смежных отраслей.</p>        
+        <form>
+          <select>
+            <option value="Объявления">Объявления</option>
+            <option value="Товары">Товары</option>
+          </select>            
+          <input type="text" placeholder=" " />
+          <button><i></i> Поиск</button>
+        </form>
+        <div class="sexamples">
+          <div>Примеры запросов:</div>
+          <ul>
+            <li>Производственное оборудование</li>
+            <li>Продукты питания</li>
+            <li>Сырьё и услуги</li>
+          </ul>
+        </div>
+      </div>      
+    </div>
+  </main>
+  @@include('var/_footer.html')
+</div>
+@@include('var/_scripts.html')
+</body>
+</html>
+
