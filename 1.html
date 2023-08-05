@@ -1,49 +1,339 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">  
+  <meta charset="UTF-8">
   <!--meta name="viewport" content="width=1200px"-->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Главная</title>  
+  <title>Главная</title>
   @@include('var/_styless.html')
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body class="body-index">
- <div class="wrapper">  
-  @@include('var/_header.html')    
-  <main class="main">
-    <div class="hero">
-      <div class="contain">
-        <h1>Каталог поставщиков продуктов питания</h1>
-        <p>Food Suppliers — крупнейший каталог поставщиков пищевой промышленности. В нашей базе собраны и структурированы производители, дистрибьюторы и другие поставщики продуктов питания и смежных отраслей.</p>        
-        <form>
-          <select>
-            <option value="Объявления">Объявления</option>
-            <option value="Товары">Товары</option>
-          </select>            
-          <input type="text" placeholder=" " />
-          <button><i></i> Поиск</button>
-        </form>
-        <div class="sexamples">
-          <div>Примеры запросов:</div>
-          <ul>
-            <li>Производственное оборудование</li>
-            <li>Продукты питания</li>
-            <li>Сырьё и услуги</li>
-          </ul>
-        </div>
-      </div>      
-    </div>
-  </main>
-  @@include('var/_footer.html')
-</div>
-@@include('var/_scripts.html')
-</body>
-</html>
 
+<body class="body-index">
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <div class="hero">
+        <div class="contain">
+          <h1>Каталог поставщиков продуктов питания</h1>
+          <p>Food Suppliers — крупнейший каталог поставщиков пищевой промышленности. В нашей базе собраны и
+          структурированы производители, дистрибьюторы и другие поставщики продуктов питания и смежных отраслей.</p>
+          <form>
+            <select>
+              <option value="Объявления">Объявления</option>
+              <option value="Товары">Товары</option>
+            </select>
+            <input type="text" placeholder=" " />
+            <button><i></i> Поиск</button>
+          </form>
+          <div class="sexamples">
+            <div>Примеры запросов:</div>
+            <ul>
+              <li>Производственное оборудование</li>
+              <li>Продукты питания</li>
+              <li>Сырьё и услуги</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="production">
+        <div class="contain">
+          <div class="h2-wrap">
+            <div class="h2 _red">Продукция
+              <a href="" class="all">Показать все</a>
+            </div>
+            <a href="" class="btn"><i></i>Добавить продукцию</a>
+          </div>
+          <div class="production__slider">
+            @@include('var/_production__it.html',{
+              "tit":"Замороженные булки в упаковке “Мини багет в упаковке”",
+              "cat":"Кондитерские изделия",
+              "img":"img/prod-1.jpg",
+              "comp":"Valikо (Тверь)",
+              "pr":"от 865 Р",
+              "cls":""
+            })
+
+            @@include('var/_production__it.html',{
+              "tit":"Замороженное пирожное “Чиз манго-маракуйя”",
+              "cat":"Кондитерские изделия",
+              "img":"img/prod-2.jpg",
+              "comp":"Valikо (Тверь)",
+              "pr":"от 500 Р",
+              "cls":""
+            })
+
+            @@include('var/_production__it.html',{
+              "tit":"Торт заморозка “Птичье молоко” (6 кусков)",
+              "cat":"Кондитерские изделия",
+              "img":"img/prod-3.jpg",
+              "comp":"Valikо (Тверь)",
+              "pr":"от 1200 Р",
+              "cls":""
+            })
+
+            @@include('var/_production__it.html',{
+              "tit":"Замороженное пирожное “Кольцо творожное”",
+              "cat":"Кондитерские изделия",
+              "img":"img/prod-4.jpg",
+              "comp":"Valikо (Тверь)",
+              "pr":"",
+              "cls":""
+            })
+
+            @@include('var/_production__it.html',{
+              "tit":"Замороженный торт “Медовик шоколадный” 20 кусков",
+              "cat":"Кондитерские изделия",
+              "img":"img/prod-5.jpg",
+              "comp":"Valikо (Тверь)",
+              "pr":"от 2350 Р",
+              "cls":"_red"
+            })
+
+            @@include('var/_production__it.html',{
+              "tit":"Торт заморозка “Птичье молоко” (6 кусков)",
+              "cat":"Кондитерские изделия",
+              "img":"img/prod-3.jpg",
+              "comp":"Valikо (Тверь)",
+              "pr":"от 1200 Р",
+              "cls":""
+            })
+          </div>
+        </div>
+      </section>
+      <section class="new">
+        <div class="contain">
+          <div class="new__row">
+            <div class="new__col">
+              <div class="h2">Новые <span>компании</span>
+                <a href="" class="all _blue">Показать все</a>
+              </div>
+              <div class="new__content">
+                <div class="ncompany__it">
+                  <a href="">Optomturkk</a>
+                  <div>Производитель: <a href="">Спортивная обувь, Спортивная одежда, Аксессуары</a></div>
+                  <p>Турция, Стамбул</p>
+                </div>
+                <div class="ncompany__it">
+                  <a href="">Smart Stone</a>
+                  <div>Сервисная компания: <a href="">Ремонт авто, Запчасти</a></div>
+                  <p>Россия, Анапа</p>
+                </div>
+                <div class="ncompany__it">
+                  <a href="">ИП Абсалямова А. Г.</a>
+                  <div>Поставщик: <a href="">Упаковка, Автоаксессуары</a></div>
+                  <p>Россия, Уфа</p>
+                </div>
+                <div class="ncompany__it">
+                  <a href="">Oseko Cosmetics</a>
+                  <div>Дистрибьютер: <a href="">Парфюм оригинал селектив</a></div>
+                  <p>Южная Корея, Пусан</p>
+                </div>
+                <div class="ncompany__it">
+                  <a href="">ЛигаОпт</a>
+                  <div>Дистрибьютер: <a href="">Товары для дома</a></div>
+                  <p>Московская обл., Видное</p>
+                </div>
+              </div>
+              <div class="mew__bot">
+                <a href="" class="btn"><i></i>Добавить свою компанию</a>
+                <a href="" class="all">Показать все компании</a>
+              </div>
+            </div>
+            <!--col-->
+            <div class="new__col">
+              <div class="h2">Новые <span>объявления</span>
+                <a href="" class="all _blue">Показать все</a>
+              </div>
+              <div class="new__content">
+                <div class="announ__it">
+                  <span>11.05.2022 <img src="img/up.svg"></span>
+                  <div class="announ__content">
+                    <a href="">Требуется парфюм оригинал селектив</a>
+                    <p>Нижний Тагил, Россия</p>
+                  </div>
+                </div>
+                <div class="announ__it">
+                  <span>11.05.2022 <img src="img/down.svg"></span>
+                  <div class="announ__content">
+                    <a href="">Продам ботокс, филлеры, нити</a>
+                    <p>Московская обл., Видное</p>
+                  </div>
+                </div>
+                <div class="announ__it">
+                  <span>15.05.2022<img src="img/down.svg"></span>
+                  <div class="announ__content">
+                    <a href="">Купим оптом пледы, покрывала бамбуковые с пушистым ворсом</a>
+                    <p>Ташкент, Узбекистан</p>
+                  </div>
+                </div>
+                <div class="announ__it">
+                  <span>17.05.2022<img src="img/down.svg"></span>
+                  <div class="announ__content">
+                    <a href="">Куплю оптом мужскую, женскую спортивную одежду и обувь</a>
+                    <p>Нижний Тагил, Россия</p>
+                  </div>
+                </div>
+                <div class="announ__it">
+                  <span>18.05.2022<img src="img/down.svg"></span>
+                  <div class="announ__content">
+                    <a href="">Куплю оптом упаковку, автоакссесуары</a>
+                    <p>Димитровград, Россия</p>
+                  </div>
+                </div>
+                <div class="announ__it">
+                  <span>19.05.2022<img src="img/down.svg"></span>
+                  <div class="announ__content">
+                    <a href="">Купить оптом футболки оверсайз унисекс, возможно с нанесением принта</a>
+                    <p>Искитим, Россия</p>
+                  </div>
+                </div>
+                <div class="announ__it">
+                  <span>21.05.2022<img src="img/down.svg"></span>
+                  <div class="announ__content">
+                    <a href="">Куплю оптом шоколад иностранный</a>
+                    <p>Фаниполь, Беларусь</p>
+                  </div>
+                </div>
+                <div class="announ__it">
+                  <span>14.05.2022<img src="img/up.svg"></span>
+                  <div class="announ__content">
+                    <a href="">Продажа оптом подростковой одежды</a>
+                    <p>Московская обл., Видное</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mew__bot">
+                <a href="" class="btn"><i></i>Добавить своё объявление</a>
+                <a href="" class="all">Показать все иобъявления</a>
+              </div>
+            </div>
+            <!--col-->
+          </div>
+        </div>
+      </section>
+      <section class="brands">
+        <div class="contain">
+          <div class="brands__row">
+            <img src="img/brands-1.png" alt="">
+            <img src="img/brands-2.png" alt="">
+            <img src="img/brands-3.png" alt="">
+            <img src="img/brands-4.png" alt="">
+            <img src="img/brands-5.png" alt="">
+            <img src="img/brands-6.png" alt="">
+            <img src="img/brands-7.png" alt="">
+            <img src="img/brands-8.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="revs">
+        <div class="contain">
+
+          <div class="h2 _red">
+            Отзывы <a href="" class="all">Показать все</a>
+          </div>          
+          <div class="revs__slider">
+            @@include('var/_revs__item.html',{
+              "title":"Юго-Восточная Агрогруппа",
+              "text":"Продукция неплохого качества.Насмотреться можно всего на любом предприятии в любой отрасли.Для меня работа была там положительной. Почему? Потому что я поняла, что я опустилась до такого низкого уровня, что вынуждена была работать рыбообработчицей ( вернее фасовщицей).",
+              "date":"28.10.2021",
+              "name":"Ирина Васильевна",
+              "like":"img/like.svg",
+              "more": "<a class='more' href=''></a>"
+            })
+
+            @@include('var/_revs__item.html',{
+              "title":"ИП Сабаев Н.И.",
+              "text":"Хотелось бы вкусить вашу продукцию по тем самым Советским рецептам, но увы !! Вкус вашей продукции совсем не тот, что раньше был! Видимо все рецепты утеряны?! Вы, сами пробуйте, то что производите !!!",
+              "date":"05.12.2021",
+              "name":"Марья Ивановна",
+              "like":"img/dis.svg",
+              "more": ""
+            })
+
+            @@include('var/_revs__item.html',{
+              "title":"Союзптицепром",
+              "text":"Хорошее расположение компании можно подъехать даже на чень длинной машине. персонал работает настолько слаженно и профессионально. купили тестомес для крутого теста, работаем на нем 5 месяцев и очень довольны",
+              "date":"01.01.2022",
+              "name":"Герасимова Вера",
+              "like":"img/like.svg",
+              "more": ""
+            })
+
+            @@include('var/_revs__item.html',{
+              "title":"ИП Сабаев Н.И.",
+              "text":"Хотелось бы вкусить вашу продукцию по тем самым Советским рецептам, но увы !! Вкус вашей продукции совсем не тот, что раньше был! Видимо все рецепты утеряны?! Вы, сами пробуйте, то что производите !!!",
+              "date":"05.12.2021",
+              "name":"Марья Ивановна",
+              "like":"img/dis.svg",
+              "more": ""              
+            })
+
+            @@include('var/_revs__item.html',{
+              "title":"Юго-Восточная Агрогруппа",
+              "text":"Продукция неплохого качества.Насмотреться можно всего на любом предприятии в любой отрасли.Для меня работа была там положительной. Почему? Потому что я поняла, что я опустилась до такого низкого уровня, что вынуждена была работать рыбообработчицей ( вернее фасовщицей).",
+              "date":"28.10.2021",
+              "name":"Ирина Васильевна",
+              "like":"img/like.svg",
+              "more": ""             
+            })
+
+            @@include('var/_revs__item.html',{
+              "title":"ИП Сабаев Н.И.",
+              "text":"Хотелось бы вкусить вашу продукцию по тем самым Советским рецептам, но увы !! Вкус вашей продукции совсем не тот, что раньше был! Видимо все рецепты утеряны?! Вы, сами пробуйте, то что производите !!!",
+              "date":"05.12.2021",
+              "name":"Марья Ивановна",
+              "like":"img/dis.svg",
+              "more": ""              
+            })
+
+          </div>
+        </div>
+      </section>      
+      <section class="advantages">
+        <div class="contain">
+          <div class="advantages__row">
+            <div class="advantages__it"><img src="img/advantages-1.svg" /> <span>Обширный каталог включает более 35 000 компаний</span></div>
+            <div class="advantages__it"><img src="img/advantages-2.svg" /> <span>Исчерпывающая информация о предприятиях</span></div>
+            <div class="advantages__it"><img src="img/advantages-3.svg" /> <span>Удобный фильтр в разы упрощает поиск предприятий</span></div>
+            <div class="advantages__it"><img src="img/advantages-4.svg" /> <span>Бесплатная доска объявлений для всех пользователей</span></div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="contain">
+          <div class="h2-wrap">
+            <div class="h2-w _red">
+              <div class="h2">Новости отрасли
+                <a href="" class="all">Показать все</a>
+              </div>
+              <p>Май - Июнь, 2022</p>
+            </div>
+            <ul class="ncats__ul">
+              <li class="active">Новости отрасли</li>
+              <li>Новости компаний</li>
+              <li>Итоги мероприятий</li>
+              <li>Пресс-релизы</li>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+      <section class="pubs">
+
+      </section>
+    </main>
+    @@include('var/_footer.html')
+    
+  </div>
+  @@include('var/_scripts.html')
+</body>
+
+</html>
