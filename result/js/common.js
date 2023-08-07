@@ -81,17 +81,72 @@ jQuery(document).ready(function( $ ) {
     ]
   });
 
+  $('.news__slider').slick({
+    infinite: false,    
+    speed: 600,
+    slidesToScroll: 1,
+    autoplay: false,    
+    slidesToShow: 3,
+    cssEase: 'linear',  
+    autoplaySpeed: 0,  
+    arrows: false,
+    dots: true,
+    pauseOnHover: true,  
+    responsive: [
+    {
+      breakpoint: 1381,
+      settings: {
+        slidesToShow: 5
+      }
+    },   
+    ]
+  });
 
-$('.more').click(function (e) {
-  e.preventDefault();
-  $(this).closest('p').addClass('show');
-  $(this).hide();
-})
+  $('.pubs__slider').slick({
+    infinite: false,    
+    speed: 600,
+    slidesToScroll: 1,
+    autoplay: false,    
+    slidesToShow: 4,
+    cssEase: 'linear',  
+    autoplaySpeed: 0,  
+    arrows: true,
+    dots: false,
+    pauseOnHover: true,  
+    responsive: [
+    {
+      breakpoint: 1381,
+      settings: {
+        slidesToShow: 5
+      }
+    },   
+    ]
+  });
+
+
+  $('.more').click(function (e) {
+    e.preventDefault();
+    $(this).closest('p').addClass('show');
+    $(this).hide();
+  });
+
+
+  function tabs(element) {    
+    $(element).find('.tabs__list-item').click(function () {
+      $(element).find('.tabs__list-item').removeClass('active');
+      $(this).addClass('active');    
+      let num = $(this).index();
+      $(element).find('.tabs__content-list-item').removeClass('active');
+      $(element).find('.tabs__content-list-item').eq(num).addClass('active');    
+    });
+  }
+
+  tabs('.ncats__tabs');
 
 
 /************************************/
 
-/*$('.wrapper').prepend('<span class="eye-3"></span>');
+$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -103,7 +158,7 @@ $('.eye-3').click(function (e) {
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
 
-});*/
+});
 
 /************************************/
 
