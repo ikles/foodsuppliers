@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2. COMPANIES</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main inner-page">
+      <div class="contain">
+       <div class="row">
+         <div class="col-l">
+          <ul class="bread">
+            <li><a href="">Главная</a></li>
+            <li>Компании</li>
+          </ul>
+          <div class="h1-w">
+            <h1>Пищевые компании</h1>
+            <span>2 856 компаний</span>
+          </div>
+          <div class="comp__items">
+            @@include('var/_comp__item.html',{
+              "class":"active",
+              "img":"img/comp-1.png",
+              "title":"СХК-Колхоз «Чудское озеро»",
+              "desc":"Компания занимается разведением крупного рогатого скота и производством молока",
+              "gor":"<span>Удмуртская Республика, с. Нижнее Асаново</span>",
+              "cls":"",
+              "tel":"<a href='tel:+7 (495) 456-08-93' class='comp__tel'>+7 (495) 456-08-93</a>",
+              "www":"<a href='www.molodaya-gv.ru' class='comp__site'>www.molodaya-gv.ru</a>"
+            })
+
+            @@include('var/_comp__item-nogal.html',{
+              "class":"",
+              "img":"img/comp-2.png",
+              "title":"Завод «Красный октябрь»",
+              "desc":"Компания осуществляет деятельность по производству сыра и молочной продукции",
+              "gor":"<span>Московская обл, д. Сергеево</span>",
+              "tel":"",
+              "cls":"",
+              "www":""
+            })
+
+            @@include('var/_comp__item.html',{
+              "class":"",
+              "img":"img/comp-3.png",
+              "title":"Кондитерский завод «Бабаевский»",
+              "desc":"Производство сыра и молочной продукции",
+              "gor":"<span>г. Москва</span>",
+              "tel":"",
+              "cls":"",
+              "www":""
+            })
+            @@include('var/_comp__item.html',{
+              "class":"",
+              "img":"img/comp-4.png",
+              "title":"Кондитерская фабрика «Тайника»",
+              "desc":"Производим натуральные варенье, мед, иван-чай",
+              "gor":"<span>г. Казань</span>",
+              "tel":"",
+              "cls":"",
+              "www":""
+            })
+            @@include('var/_comp__item.html',{
+              "class":"",
+              "img":"img/comp-5.png",
+              "title":"Агрокомплекс «Вакинское агро»",
+              "desc":"ООО «Вакинское Агро» - современный агрокомплекс организованный в 2012 году в экологически чистом районе Рязанской области. Направление деятельности компании - растениеводство, производство кормов, разведение племенного крупного рогатого скота (КРС), производство и продажа молочной продукции под собственным брендом «ЭКОВАКИНО»",
+              "gor":"<span>Рязанская обл., с. Вакино</span>",
+              "tel":"",
+              "cls":"",
+              "www":""
+            })
+            @@include('var/_comp__item.html',{
+              "class":"",
+              "img":"img/comp-6.png",
+              "title":"Оптовый поставщик алкогольной продукции «АЛКОмпани»",
+              "desc":"АЛ.КОмпани - дистрибьютор, специализируется на оптовых поставках пива и напитков",
+              "gor":"<span>г. Новосибирск</span>",
+              "tel":"",
+              "cls":"",
+              "www":""
+            })
+            @@include('var/_comp__item.html',{
+              "class":"",
+              "img":"img/noimage.svg",
+              "title":"Сельскохозяйственное предприятие «Ударник»",
+              "desc":"Предприятие осуществляет деятельность по разведению крупного рогатого скота",
+              "gor":"<span>Свердловская область, с. Сажино</span>",
+              "tel":"",
+              "cls":"noimage",
+              "www":""
+            })
+          </div>
+          @@include('var/_spagin.html')
+        </div><!--col-l-->
+        <div class="col-r">
+          @@include('var/_rfilter.html')
+          <div class="rcats">            
+            <div class="rcats__item">
+              <div class="rcats__top">
+                <div>Продукты питания</div>
+                <span>2 198</span>
+              </div>
+              <ul>
+                <li><a href="">Антибактериальная обработка и пастеризация</a></li>
+                <li><a href=""> Бакалея</a></li>
+                <li><a href=""> Горячие напитки</a></li>
+                <li><a href="">Грибы</a></li>
+                <li><a href=""> Детское питание</a></li>
+                <li><a href=""> Диетическое питание</a></li>
+                <li><a href=""> Еда быстрого приготовления</a></li>
+                <li><a href="">Животноводство</a></li>
+                <li><a href=""> Кондитерские изделия</a></li>
+              </ul>
+            </div>
+            <div class="rcats__item">
+              <div class="rcats__top">
+                <div>Оборудование</div>
+                <span>745</span>
+              </div>
+              <ul>
+                <li><a href="">Кондитерское оборудование</a></li>
+                <li><a href=""> Консервное оборудование</a></li>
+                <li><a href=""> Молочное оборудование</a></li>
+                <li><a href="">Мукомольно-крупяное оборудование</a></li>
+                <li><a href="">Мясоперерабатывающее оборудование</a></li>
+                <li><a href="">Оборудование для переработки жиров и масел</a></li>
+                <li><a href=""> Оборудование для переработки овощей и фруктов</a></li>
+                <li><a href=""> Оборудование для производства крахмала и глюкозы</a></li>
+              </ul>
+            </div>
+            <div class="rcats__item">
+              <div class="rcats__top">
+                <div>Сервисные компании</div>
+                <span>28</span>
+              </div>
+              <ul>
+                <li><a href="">Сервис по производству напитков</a></li>
+                <li><a href=""> Сервис по производсту приправ</a></li>
+                <li><a href=""> Сервис для розлива и укупорки</a></li>
+                <li><a href=""> Сервис по ремонту оборудования для рыбы и морепродуктов</a></li>
+              </ul>
+            </div>
+            <a href="" class="rcats__all">Все товары и услуги</a>  
+          </div>
+        </div><!--col-r-->
+      </div><!--row--> 
+    </div>
+  </main>
+  @@include('var/_cities.html')
+  @@include('var/_footer.html')
+</div>
+@@include('var/_scripts.html')
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3. COMPANY-PROD</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main inner-page">
+      <div class="contain">
+       <div class="row">
+         <div class="col-l">
+          <ul class="bread">
+            <li><a href="">Главная</a></li>
+            <li><a href="">Компании</a></li>
+            <li><a href="">Продукты питания</a></li>
+            <li>Бакалея</li>            
+          </ul>          
+          <h1>Поставщики и производители бакалеи</h1>
+          <p class="p">На данной странице представлены российские поставщики бакалеи, среди них могут быть производители, оптовики, дистрибьюторы и сервисные компании. Для более точного поиска воспользуйтесь фильтром или навигацией.</p>
+          <div class="lsort">
+            <ul>
+              <li class="active"><a href="">Компании<sup>345</sup></a></li>
+              <li><a href="">Товары <sup>28</sup></a></li>
+              <li><a href="">Объявления <sup>1 800</sup></a></li>
+            </ul>
+            <div class="manuf__reg-w">
+              <p>Ваш регион: <a href="">Москва и МО</a></p>
+              <a href="" class="manuf__close"></a>
+            </div>
+          </div>
+          <div class="sort">            
+            <p>Сортировать:</p>
+            <a href=""> Сначала новые<span></span></a>
+          </div>
+          <div class="comp__items">
+            @@include('var/_comp__item.html',{
+              "class":"",
+              "img":"img/comp-2.png",
+              "title":"Кондитерский завод «Красный октябрь»",
+              "desc":"Направление деятельности компании - растениеводство, производство кормов, разведение племенного крупного рогатого скота (КРС), производство и продажа молочной продукции под собственным брендом «ЭКОВАКИНО»",
+              "gor":"<span>Московская обл, д. Сергеево</span>",
+              "tel":"",
+              "cls":"",
+              "www":""
+            })
+            @@include('var/_comp__item.html',{
+              "class":"",
+              "img":"img/comp-8.jpg",
+              "title":"Компания «КампоМос»",
+              "desc":"Компания осуществляет деятельность по производству сыра и молочной продукции",
+              "gor":"<span>г. Москва</span>",
+              "tel":"",
+              "cls":"",
+              "www":""
+            })
+            @@include('var/_comp__item.html',{
+              "class":"",
+              "img":"img/comp-9.jpg",
+              "title":"Кондитерская фабрика «Яшкино»",
+              "desc":"Производим натуральные варенье, мед, иван-чай",
+              "gor":"<span>г. Москва</span>",
+              "tel":"",
+              "cls":"",
+              "www":""
+            })
+            @@include('var/_comp__item.html',{
+              "class":"",
+              "img":"img/comp-10.jpg",
+              "title":"Завод «Большевик»",
+              "desc":"Компания осуществляет деятельность по производству сыра и молочной продукции",
+              "gor":"<span>г. Москва</span>",
+              "tel":"",
+              "cls":"",
+              "www":""
+            })
+            @@include('var/_comp__item.html',{
+              "class":"",
+              "img":"img/comp-11.jpg",
+              "title":"Комбинат «Невская Трапеза»",
+              "desc":"АЛ.КОмпани - дистрибьютор, специализируется на оптовых поставках пива и напитков",
+              "gor":"<span>г. Москва</span>",
+              "tel":"",
+              "cls":"",
+              "www":""
+            })
+            @@include('var/_comp__item.html',{
+              "class":"",
+              "img":"img/comp-12.jpg",
+              "title":"ООО «Вимм-Билль-Данн»",
+              "desc":"Предприятие осуществляет деятельность по разведению крупного рогатого скота",
+              "gor":"<span>г. Москва</span>",
+              "tel":"",
+              "cls":"",
+              "www":""
+            })
+
+
+          </div>
+          @@include('var/_spagin.html')
+        </div><!--col-l-->
+        <div class="col-r">
+          @@include('var/_rfilter2.html')
+          <div class="rcats">            
+            <div class="rcats__item">
+              <div class="rcats__top">
+                <div>Бакалея</div>
+                <a href="">Все</a>
+              </div>
+              <ul class="rcats__ul">                
+                <li><a href="">Дрожжи</a> <span>64</span></li>
+                <li><a href="">Кулинарные ингредиенты</a> <span>64</span></li>
+                <li><a href="">Макароны</a> <span>45</span></li>
+                <li><a href="">Маргарин</a> <span>8</span></li>
+                <li><a href="">Маринады</a> <span>0</span></li>
+                <li><a href="">Мед</a> <span>80</span></li>
+                <li><a href="">Мука</a> <span>82</span></li>
+                <li><a href="">Приправы</a> <span>120</span></li>
+                <li><a href="">Растительное масло</a> <span>45</span></li>
+                <li><a href="">Сахар</a> <span>8</span></li>
+                <li><a href="">Смеси для выпечки</a> <span>90</span></li>
+                <li><a href="">Соль</a> <span>34</span></li>
+                <li><a href="">Спред</a> <span>67</span></li>
+                <li><a href="">Уксус</a> <span>1</span></li>
+              </ul>
+            </div>
+            <a href="" class="rcats__all">Показать все разделы</a>  
+          </div>
+        </div><!--col-r-->
+      </div><!--row--> 
+    </div>
+  </main>
+  @@include('var/_cities.html')
+  @@include('var/_footer.html')
+</div>
+@@include('var/_scripts.html')
+</body>
+</html>

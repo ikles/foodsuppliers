@@ -20,10 +20,30 @@
   <div class="wrapper">
     @@include('var/_header.html')
     <main class="main inner-page">
-
       <div class="contain">
         <div class="row">
           <div class="col-l">
+            <ul class="bread">
+              <li><a href="">Главная</a></li>              
+              <li>Объявления</li>
+            </ul>          
+            <h1>Спрос и предложения</h1>          
+            <div class="lsort">
+              <ul>
+                <li class="active"><a href="">Компании<sup>345</sup></a></li>
+                <li><a href="">Товары <sup>28</sup></a></li>
+                <li><a href="">Объявления <sup>1 800</sup></a></li>
+              </ul>
+              <div class="manuf__reg-w">
+                <p>Ваш регион: <a href="">Москва и МО</a></p>
+                <a href="" class="manuf__close"></a>
+              </div>
+            </div>
+            <div class="sort">            
+              <p>Сортировать:</p>
+              <a href=""> Сначала новые<span></span></a>
+            </div>
+
             <div class="demand__list">
               @@include('var/_demand__item.html',{
                 "img":"img/demand-0.jpg",
@@ -63,7 +83,7 @@
                 "title":"Технологическая линия по переработке органического сырья",
                 "geo":"Московская область, г Москва",
                 "comp":"ООО КУБАНЬ АГРО",
-                "price":"<div class='production__price'>от 69 Р/упак</div>"
+                "price":"<div class='production__price'>Договорная</div>"
               })
               @@include('var/_demand__item.html',{
                 "img":"img/demand-6.jpg",
@@ -71,7 +91,7 @@
                 "title":"Стойка регистрации производственных данных",
                 "geo":"Московская область, г Москва",
                 "comp":"ООО КУБАНЬ АГРО",
-                "price":"<div class='production__price'>от 69 Р/упак</div>"
+                "price":"<div class='production__price'>Договорная</div>"
               })
               @@include('var/_demand__item.html',{
                 "img":"img/demand-7.jpg",
@@ -79,7 +99,7 @@
                 "title":"Установка гильотинной резки мясных блоков",
                 "geo":"Московская область, г Москва",
                 "comp":"ООО КУБАНЬ АГРО",
-                "price":"<div class='production__price'>от 69 Р/упак</div>"
+                "price":"<div class='production__price'>Договорная</div>"
               })
               @@include('var/_demand__item.html',{
                 "img":"img/demand-8.jpg",
@@ -87,72 +107,94 @@
                 "title":"Конвейер обвалки и жиловки мяса со шнековым дозатором фарша",
                 "geo":"Московская область, г Москва",
                 "comp":"ООО КУБАНЬ АГРО",
-                "price":"<div class='production__price'>от 69 Р/упак</div>"
+                "price":"<div class='production__price'>Договорная</div>"
               })
               @@include('var/_demand__item.html',{
                 "img":"img/demand-9.jpg",
-                "dem":"<p>Предложение от 28.05.2022</p>",
+                "dem":"<p class='_red'>Спрос на товары</p>",
                 "title":"Моющие концентрированные средства",
                 "geo":"Московская область, г Москва",
                 "comp":"ООО КУБАНЬ АГРО",
-                "price":"<div class='production__price'>от 69 Р/упак</div>"
+                "price":""
               })
               @@include('var/_demand__item.html',{
                 "img":"img/demand-10.jpg",
-                "dem":"<p>Предложение от 28.05.2022</p>",
+                "dem":"<p class='_red'>Спрос на товары</p>",
                 "title":"Моющие концентрированные средства",
                 "geo":"Московская область, г Москва",
                 "comp":"ООО КУБАНЬ АГРО",
-                "price":"<div class='production__price'>от 69 Р/упак</div>"
+                "price":""
               })
               @@include('var/_demand__item.html',{
                 "img":"img/demand-11.jpg",
-                "dem":"<p>Предложение от 28.05.2022</p>",
+                "dem":"<p class='_red'>Спрос на товары</p>",
                 "title":"Моющие концентрированные средства",
                 "geo":"Московская область, г Москва",
                 "comp":"ООО КУБАНЬ АГРО",
-                "price":"<div class='production__price'>от 69 Р/упак</div>"
+                "price":""
               })
               @@include('var/_demand__item.html',{
                 "img":"img/demand-12.jpg",
-                "dem":"<p>Предложение от 28.05.2022</p>",
+                "dem":"<p class='_red'>Спрос на товары</p>",
                 "title":"Моющие концентрированные средства",
                 "geo":"Московская область, г Москва",
                 "comp":"ООО КУБАНЬ АГРО",
-                "price":"<div class='production__price'>от 69 Р/упак</div>"
+                "price":""
               })
             </div>
-            <ul class="spagin">
-              <!-- <li><a class="spagin-control spagin-prev" href="#">Предыдущая</a></li> -->
-              <li><a class="active" href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>              
-              <li><a href="#">...</a></li>
-              <li><a href="#">28</a></li>
-              <li><a class="spagin-control spagin-next" href="#">Следующая</a></li>    
-            </ul>
+            @@include('var/_spagin.html')
           </div>
           <!--col-l-->
           <div class="col-r">
-            <div class="rfilter">
-              <form>
-                <input class="_disable" disabled type="text" placeholder="Наименование">
-                <input class="_geo" type="text" placeholder="Населённый пункт" value="Москва">
-                <select>
-                  <option value="Поставщик">Поставщик</option>
-                  <option value="Поставщик2">Поставщик2</option>
-                </select>                
-                <a class="comp__r-fm-choice">Тип компании</a>
-                <a class="comp__r-fm-choice">Сфера деятельности</a>
-                <div class="comp__btn-w">
-                  <a class="comp__reset">Сбросить все</a>
-                  <a class="comp__btn">Показать</a>
+            @@include('var/_rfilter.html')
+            <div class="rcats">            
+              <div class="rcats__item">
+                <div class="rcats__top">
+                  <div>Продукты питания</div>
+                  <span>2 198</span>
                 </div>
-              </form>
-            </div>
-
+                <ul>
+                  <li><a href="">Антибактериальная обработка и пастеризация</a></li>
+                  <li><a href=""> Бакалея</a></li>
+                  <li><a href=""> Горячие напитки</a></li>
+                  <li><a href="">Грибы</a></li>
+                  <li><a href=""> Детское питание</a></li>
+                  <li><a href=""> Диетическое питание</a></li>
+                  <li><a href=""> Еда быстрого приготовления</a></li>
+                  <li><a href="">Животноводство</a></li>
+                  <li><a href=""> Кондитерские изделия</a></li>
+                </ul>
+              </div>
+              <div class="rcats__item">
+                <div class="rcats__top">
+                  <div>Оборудование</div>
+                  <span>745</span>
+                </div>
+                <ul>
+                  <li><a href="">Кондитерское оборудование</a></li>
+                  <li><a href=""> Консервное оборудование</a></li>
+                  <li><a href=""> Молочное оборудование</a></li>
+                  <li><a href="">Мукомольно-крупяное оборудование</a></li>
+                  <li><a href="">Мясоперерабатывающее оборудование</a></li>
+                  <li><a href="">Оборудование для переработки жиров и масел</a></li>
+                  <li><a href=""> Оборудование для переработки овощей и фруктов</a></li>
+                  <li><a href=""> Оборудование для производства крахмала и глюкозы</a></li>
+                </ul>
+              </div>
+              <div class="rcats__item">
+                <div class="rcats__top">
+                  <div>Сервисные компании</div>
+                  <span>28</span>
+                </div>
+                <ul>
+                  <li><a href="">Сервис по производству напитков</a></li>
+                  <li><a href=""> Сервис по производсту приправ</a></li>
+                  <li><a href=""> Сервис для розлива и укупорки</a></li>
+                  <li><a href=""> Сервис по ремонту оборудования для рыбы и морепродуктов</a></li>
+                </ul>
+              </div>
+              <a href="" class="rcats__all">Все товары и услуги</a>  
+            </div>  
           </div>
           <!--col-r-->
         </div>
