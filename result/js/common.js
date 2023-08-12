@@ -198,6 +198,15 @@ jQuery(document).ready(function( $ ) {
 
 
 
+  $(".regions__item ul").mCustomScrollbar({
+    axis: "y",
+    theme: "dark-3",
+    mouseWheel: 1,
+    scrollInertia: '230'
+  });    
+  
+
+
 /************************************/
 
 /*$('.wrapper').prepend('<span class="eye-3"></span>');
