@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8. EVENTS-LIST</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main inner-page">
+      <div class="contain">
+       <div class="row">
+         <div class="col-l">
+          <ul class="bread">
+            <li><a href="">Главная</a></li>            
+            <li>Мероприятия</li>
+          </ul>          
+          <h1>Мероприятия</h1>
+          <div class="lsort nobord">
+            <ul>
+              <li class="active"><a href="">Выставки</a></li>
+              <li><a href="">Фестивали</a></li>
+              <li><a href="">Ярмарки</a></li>
+              <li><a href="">Конференции и форумы</a></li>
+            </ul>
+            <div class="sort">            
+              <p>Сортировать:</p>
+              <a href=""> По дате<span></span></a>
+            </div>
+          </div>          
+          <div class="event__items">            
+           @@include('var/_event.html',{
+             "title":"Кубань 2022",
+             "img":"img/prod-prod.png",
+             "text":"<p>Выставка-ярмарка продовольственных товаров</p>",
+             "place":"<div class='event__place'>Сочи, ул. Черноморская, 3</div>"
+           })
+           @@include('var/_event.html',{
+             "title":"IDMA Russia 2022",
+             "img":"img/ev-2.jpg",
+             "text":"<p>Международная выставка зерновых культур и технологий обработки</p>",
+             "place":"<div class='event__place'>65-66й км МКАД, г. Красногорск, Московская обл., 143402</div>"
+           })
+           @@include('var/_event.html',{
+             "title":"Seafood Expo Russia & Global Fishery Forum 2022",
+             "img":"img/ev-3.jpg",
+             "text":"<p>Выставка рыбной индустрии, морепродуктов и технологий и международный рыбопромышленный форум</p>",
+             "place":"<div class='event__place'>Петербургское ш., 64, Санкт-Петербург</div>"
+           })
+           @@include('var/_event.html',{
+             "title":"Агропродмаш 202",
+             "img":"img/ev-4.jpg",
+             "text":"<p>Международная выставка «Оборудование, машины и ингредиенты для пищевой и перерабатывающей промышленности»</p>",
+             "place":"<div class='event__place'>Москва, Краснопресненская наб., 14</div>"
+           })
+           @@include('var/_event.html',{
+             "title":"Петерфуд 2022",
+             "img":"img/ev-5.jpg",
+             "text":"<p>Международная продовольственная выставка</p>",
+             "place":"<div class='event__place'>Петербургское ш., 64, Санкт-Петербург</div>"
+           })
+           @@include('var/_event.html',{
+             "title":"FoodTech Ural 2022",
+             "img":"img/ev-6.jpg",
+             "text":"<p>Выставка оборудования, упаковки и ингредиентов для производства продуктов питания и напитков</p>",
+             "place":"<div class='event__place'>Екатеринбург, ЭКСПО-бульвар, дом 2</div>"
+           })
+         </div>
+         @@include('var/_spagin.html')
+       </div><!--col-l-->
+       <div class="col-r">
+        @@include('var/_rfilter.html')
+        <div class="rcats">            
+          <div class="rcats__item">
+            <div class="rcats__top">
+              <div>Тематика мероприятий</div>              
+            </div>
+            <ul class="rcats__ul">                              
+              <li><a href="">Вина</a></li>
+              <li><a href="">Деликатесы</a></li>
+              <li><a href="">Здоровое питание</a></li>
+              <li><a href="">Кейтеринг</a></li>
+              <li><a href="">Кондитерские изделия</a></li>
+              <li><a href="">Кофе</a></li>
+              <li><a href="">Культура потребления</a></li>
+              <li><a href="">Молочная индустрия</a></li>
+              <li><a href="">Мясная промышленность</a></li>
+              <li><a href="">Напитки</a></li>
+              <li><a href="">Органические продукты</a></li>
+              <li><a href="">Пищевое оборудование</a></li>
+              <li><a href="">Пищевые добавки</a></li>
+              <li><a href="">Пищевые ингредиенты</a></li>
+              <li><a href="">Продукты питания</a></li>
+              <li><a href="">Технологии обработки</a></li>
+              <li><a href="">Фермерские продукты</a></li>
+              <li><a href="">Хлебобулочные изделия</a></li>
+              <li><a href="">Хранение и упаковка</a></li>
+              <li><a href="">Чай</a></li>
+            </ul>
+          </div>
+          <a href="" class="rcats__all">Все мероприятия</a>  
+        </div>
+      </div><!--col-r-->
+    </div><!--row--> 
+  </div>
+</main>
+@@include('var/_cities.html')
+@@include('var/_footer.html')
+</div>
+@@include('var/_scripts.html')
+</body>
+</html>
