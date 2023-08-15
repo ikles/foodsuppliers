@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>13. COMPANY-DETAIL</title>
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+      <header class="header">
+    <div class="contain">
+      <div class="header__row">
+        <a href="index.html" class="logo">
+          <span>Food</span> Suppliers
+        </a>
+        <ul>
+          <li><a href="" class="active">Компании </a></li>
+          <li><a href="">Продукция</a></li>
+          <li><a href="">Доска объявлений</a></li>
+          <li><a href="">Публикации</a></li>
+        </ul>
+        <div class="header__r">
+          <div class="header__actions">
+            <a href=""><img src="img/search-normal.svg" /></a>
+            <a href=""><img src="img/cab.svg" /></a>
+            <a class="fav" href="">
+              <img src="img/fav.svg" />
+              <span>3</span>
+            </a>
+          </div>
+          <a href="" class="btn"><i></i> Добавить компанию</a>
+        </div>
+      </div>
+    </div>
+  </header>
+    <main class="main inner-page">
+      <div class="contain">
+        <ul class="bread">
+          <li><a href="">Главная</a></li>
+          <li><a href="">Пищевые компании</a></li>
+          <li><a href="">Продукты питания</a></li>
+          <li><a href="">Маргарин</a></li>
+          <li>Московский жировой комбинат</li>
+        </ul>
+        <h1>
+          <a href="" class="back" href=""></a>
+          Московский жировой комбинат
+        </h1>
+        <div class="stars__row">
+          <div class="stars__w">
+            <ul class="stars">
+              <li><img src="img/star-yell.svg" /></li>
+              <li><img src="img/star-yell.svg" /></li>
+              <li><img src="img/star-yell.svg" /></li>
+              <li><img src="img/star-yell.svg" /></li>
+              <li class="star-o"><img src="img/star-grey.svg" /></li>
+            </ul>
+            <a href="">28 отзывов</a>
+          </div>
+          <label>
+            <input type="checkbox">
+            <span></span>
+            <div>В избранное</div>
+          </label>
+        </div>
+        <div class="lsort">
+          <ul>
+            <li class="active"><a href="#ank1">О компании</a></li>
+            <li><a href="#ank2">Новости</a></li>
+            <li><a href="#ank3">Контакты</a></li>
+            <li><a href="#ank4">Отзывы</a></li>
+            <li><a href="#ank5">Продукция компании</a></li>
+          </ul>
+          <div class="sort">
+            <p>Сортировать:</p>
+            <a href=""> По дате<span></span></a>
+          </div>
+        </div>
+        <div class="det__ab" id="ank1">
+          <div class="det__l"><img src="img/det.png" /></div>
+          <div class="det__r">
+            <div class="det__title">О компании</div>
+            <p>Завод, выпускающий майонез, маргарин и горчицу. Предприятие находится в районе Грайвороново Московской
+              области. Компания основана в 1935 году. Первое время комбинат перерабатывал сырье для других маслозаводов.
+              Но с 1965 года руководство освоило технологию приготовления маргарина и внедрило его в производство. С
+            1970 г. начался выпуск майонеза.</p>
+            <p>В 2013 г. планировалось закрытие предприятия для постройки на его месте жилого квартала. Однако проект
+            был отклонен инвесторами, завод по-прежнему функционирует.</p>
+            <div class="requisites">
+              <p>Реквизиты</p>
+              <div class="requisites__content">
+                <table>
+                  <tr>
+                    <td>Название юр лица</td>
+                    <td>ООО название может быть длиннее</td>
+                  </tr>
+                  <tr>
+                    <td>ИНН</td>
+                    <td>790562154765786</td>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                    <td>ОГРН</td>
+                    <td>9084523657492637523672</td>
+                  </tr>
+                  <tr>
+                    <td>КПП</td>
+                    <td>453415007871346</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="serv">
+              <div class="serv__title">Товары и услуги</div>
+              <div class="serv__row">
+                <ul>
+                  <li><a href="">Маргарин </a></li>
+                  <li><a href=""> Горчичный соус</a></li>
+                  <li><a href="">Майонез</a></li>
+                  <li><a href="">Питьевая вода</a></li>
+                  <li><a href="">Ячневая крупа</a></li>
+                  <li><a href="">Яблоки</a></li>
+                  <li><a href="">Гороховая крупа</a></li>
+                  <li><a href="">Кукурузная крупа</a></li>
+                  <li><a href="">Пшеничная крупа</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--r-->
+        </div>
+      </div>
+
+      <section class="prodcompany" id="ank5">
+        <div class="contain">
+          <div class="h2 _red">
+            Продукция компании <a href="" class="all">Показать все</a>
+          </div>
+          <div class="prodcompany__list">
+            <div class="prodcompany__item">
+  <a href="" class="prod__gal">
+    <img src='img/prodcompany-1.jpg'>
+  </a>
+  <div class="prod__content">
+    <a href="" class="cat__cat">БАДы и диетическое питание</a>
+    <a href="" class="cat__name">Коллаген морской</a>              
+    <a href="" class="cat__gen">Московская область, г. Москва</a>
+    <a href="" class="cat__company">ООО «Welness Siberian»</a>              
+    <div class="production__price ">от 865 Р</div>
+    <a href="" class="prod__btn">Быстрый заказ</a>
+  </div>
+</div>
+            <div class="prodcompany__item">
+  <a href="" class="prod__gal">
+    <img src='img/prodcompany-2.jpg'>
+  </a>
+  <div class="prod__content">
+    <a href="" class="cat__cat">БАДы и диетическое питание</a>
+    <a href="" class="cat__name">Коллаген морской</a>              
+    <a href="" class="cat__gen">Московская область, г. Москва</a>
+    <a href="" class="cat__company">ООО «Welness Siberian»</a>              
+    <div class="production__price ">от 865 Р</div>
+    <a href="" class="prod__btn">Быстрый заказ</a>
+  </div>
+</div>
+            <div class="prodcompany__item">
+  <a href="" class="prod__gal">
+    <img src='img/prodcompany-3.jpg'>
+  </a>
+  <div class="prod__content">
+    <a href="" class="cat__cat">БАДы и диетическое питание</a>
+    <a href="" class="cat__name">Коллаген морской</a>              
+    <a href="" class="cat__gen">Московская область, г. Москва</a>
+    <a href="" class="cat__company">ООО «Welness Siberian»</a>              
+    <div class="production__price ">от 865 Р</div>
+    <a href="" class="prod__btn">Быстрый заказ</a>
+  </div>
+</div>
+            <div class="prodcompany__item">
+  <a href="" class="prod__gal">
+    <img src='img/prodcompany-4.jpg'>
+  </a>
+  <div class="prod__content">
+    <a href="" class="cat__cat">БАДы и диетическое питание</a>
+    <a href="" class="cat__name">Коллаген морской</a>              
+    <a href="" class="cat__gen">Московская область, г. Москва</a>
+    <a href="" class="cat__company">ООО «Welness Siberian»</a>              
+    <div class="production__price ">от 865 Р</div>
+    <a href="" class="prod__btn">Быстрый заказ</a>
+  </div>
+</div>
+            <div class="prodcompany__item">
+  <a href="" class="prod__gal">
+    <img src='img/prodcompany-5.jpg'>
+  </a>
+  <div class="prod__content">
+    <a href="" class="cat__cat">БАДы и диетическое питание</a>
+    <a href="" class="cat__name">Коллаген морской</a>              
+    <a href="" class="cat__gen">Московская область, г. Москва</a>
+    <a href="" class="cat__company">ООО «Welness Siberian»</a>              
+    <div class="production__price ">от 865 Р</div>
+    <a href="" class="prod__btn">Быстрый заказ</a>
+  </div>
+</div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="contain">
+          <div class="h2-wrap">
+            <div class="h2-w _red">
+              <div class="h2">Новости отрасли
+                <a href="" class="all">Показать все</a>
+              </div>
+              <p>Май - Июнь, 2022</p>
+            </div>
+          </div>
+          <div class="news__slider">
+            <div class="news__it">
+              <div>01</div>
+              <p>В Каневском районе открыли новый цех по производству сыров с белой плесенью открылся крупнейший
+              тепличный комплекс «Пермский» по выращиванию свежих овощей в Прикамье</p>
+            </div>
+            <div class="news__it">
+              <div>24</div>
+              <p>В Чусовом открылся крупнейший тепличный комплекс «Пермский» по выращиванию свежих овощей в Прикамье
+              </p>
+            </div>
+            <div class="news__it">
+              <div>28</div>
+              <p>На территории опережающего развития «Камчатка» начал работу новый рыбоперерабатывающий завод ...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="map__l">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3603b28e0c905ad21c7582917189e9a0e187bf39602b5c1b922ae04d6e15d407&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="map__r">
+          <div class="map__top">
+            <div class="map__title">Контакты</div>
+            <div class="map__update">
+              <p>Последнее обновление: 04.05.2022</p>
+              <p>Всего просмотров: 170</p>
+            </div>
+            <a href=""><span></span>Сообщить об ошибке</a>
+          </div>
+          <div class="map__content">
+            <span>Адрес</span>
+            <p>350080, Россия, Краснодарский край, г. Краснодар,<br> ул. Промышленный проезд,
+            строение 3</p>
+          </div>
+          <div class="map__content">
+            <span>Телефон</span>
+            <a href="tel:+7 (861) 212-07-77">+7 (861) 212-07-77</a>
+          </div>
+          <div class="map__content">
+            <span>Сайт</span>
+            <a href="http://palmirayug.ru">palmirayug.ru</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+  <div class="contain">
+    <div class="footer__row">
+      <div class="footer__1">
+        <a href="index.html" class="footer__logo">
+          <span>Food</span> Suppliers
+        </a>
+        <div class="copy">
+          © Все права защищены. Food Suppliers 2022. <br />
+          Информация о товарах и услугах не является публичной офертой
+        </div>
+        <ul class="fsocials">
+          <li>
+            <a href=""><img src="img/vk.svg" class="fsocials-img" /><span>VKontakte</span></a>
+          </li>
+          <li>
+            <a href=""><img src="img/tg.svg" class="fsocials-img" /><span>Telegram</span></a>
+          </li>
+          <li>
+            <a href=""><img src="img/zen.svg" class="fsocials-img" /><span>Zen</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__mnu">
+        <p>
+          <img src="img/ficon-1.svg" class="footer__mnu-img" />Каталог поставщиков</p>
+          <ul>
+            <li>
+              <a href="">Поставщики <sup>3 065</sup></a>
+            </li>
+            <li>
+              <a href="">Продукция <sup>4 987</sup></a>
+            </li>
+            <li>
+              <a href="">Спрос <sup>45</sup></a>
+            </li>
+            <li>
+              <a href="">Предложение <sup>569</sup></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__mnu">
+          <p><img src="img/ficon-2.svg" class="footer__mnu-img" />Компании и продукция</p>
+          <ul>
+            <li class="big"><a href="">Добавить компанию</a></li>
+            <li><a href="">Восстановление доступа </a></li>
+            <li><a href="">Все компании</a></li>
+            <li><a href="">Все товары</a></li>
+          </ul>
+        </div>
+        <div class="footer__mnu">
+          <p><img src="img/ficon-3.svg" class="footer__mnu-img" />Медиа</p>
+          <ul>
+            <li><a href="">Публикации</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Мероприятия</a></li>
+            <li><a href="">Отзывы</a></li>
+          </ul>
+        </div>
+        <div class="footer__mnu">
+          <p><img src="img/ficon-4.svg" class="footer__mnu-img" />Информация</p>
+          <ul>
+            <li><a href="">О сайте</a></li>
+            <li><a href="">Реклама</a></li>
+            <li><a href="">Правила сайта</a></li>
+            <li><a href="">Обратная связь</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>  
+  </footer>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>  
+<script src="js/nouislider.js"></script>
+<script src="js/wNumb.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+
+</html>
