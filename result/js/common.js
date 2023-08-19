@@ -30,16 +30,6 @@ jQuery(document).ready(function( $ ) {
   let body = document.querySelector('body');
 
 
-
-
-
-
-
-
-
-
-
-
   $('.production__slider').slick({
     infinite: false,    
     speed: 600,
@@ -268,7 +258,7 @@ $('.eye-3').click(function (e) {
   $('a[href*=\\#]:not([href=\\#])').click(function () {
     elementClick = $(this).attr("href");
     destination = $(elementClick).offset().top;
-    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 85}, 1100);
+    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 0}, 1100);
     return false;
   });
 

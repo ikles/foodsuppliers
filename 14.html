@@ -6,7 +6,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>13. COMPANY-DETAIL</title>
+  <title>14. STUFF-DETAIL</title>
   @@include('var/_styless.html')
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,28 +22,22 @@
     <main class="main inner-page">
       <div class="contain">
         <ul class="bread">
-          <li><a href="">Главная</a></li>
-          <li><a href="">Пищевые компании</a></li>
-          <li><a href="">Продукты питания</a></li>
-          <li><a href="">Бакалея</a></li>
-          <li><a href="">Маргарин</a></li>
-          <li>Московский жировой комбинат</li>
-        </ul>
+          <li><a href="">Главная</a></li>          
+          <li><a href="">Производители</a></li>          
+          <li><a href="">Живая вода Пальмиры</a></li>                    
+          <li>Вода в одноразовой бутыли Целебный ключ  10 л</li>
+        </ul>        
         <h1>
           <a href="" class="back" href=""></a>
-          Московский жировой комбинат
+          Вода в одноразовой бутыли «Целебный ключ»
         </h1>
-        <div class="stars__row">
+        <div class="stars__row ord__row">
           <div class="stars__w">
-            <ul class="stars">
-              <li><img src="img/star-yell.svg" /></li>
-              <li><img src="img/star-yell.svg" /></li>
-              <li><img src="img/star-yell.svg" /></li>
-              <li><img src="img/star-yell.svg" /></li>
-              <li class="star-o"><img src="img/star-grey.svg" /></li>
-            </ul>
+            <div class="ord__price">от 299 Р/10 л бутыль</div>
             <a href="">28 отзывов</a>
+            <div class="ord__price-txt">Минимальная партия: от 100 шт.</div>
           </div>
+          <a href="" class="btn btn-cart"><i></i> Заказать продукцию</a>
           <label>
             <input type="checkbox">
             <span></span>
@@ -52,67 +46,57 @@
         </div>
         <div class="lsort">
           <ul>
-            <li class="active"><a href="#ank1">О компании</a></li>
-            <li><a href="#ank2">Новости</a></li>
+            <li class="active"><a href="#ank1">О товаре</a></li>
+            <li><a href="#ank2">Характеристики</a></li>
             <li><a href="#ank3">Контакты</a></li>
             <li><a href="#ank4">Отзывы</a></li>
-            <li><a href="#ank5">Продукция компании</a></li>
+            <li><a href="#ank5">Похожие товары</a></li>
           </ul>          
-        </div>
-        <div class="det__ab" id="ank1">
-          <div class="det__l"><img src="img/det.png" /></div>
-          <div class="det__r">
-            <div class="det__title">О компании</div>
-            <p>Завод, выпускающий майонез, маргарин и горчицу. Предприятие находится в районе Грайвороново Московской
-              области. Компания основана в 1935 году. Первое время комбинат перерабатывал сырье для других маслозаводов.
-              Но с 1965 года руководство освоило технологию приготовления маргарина и внедрило его в производство. С
-            1970 г. начался выпуск майонеза.</p>
-            <p>В 2013 г. планировалось закрытие предприятия для постройки на его месте жилого квартала. Однако проект
-            был отклонен инвесторами, завод по-прежнему функционирует.</p>
-            <div class="requisites">
-              <p>Реквизиты</p>
-              <div class="requisites__content">
-                <table>
-                  <tr>
-                    <td>Название юр лица</td>
-                    <td>ООО название может быть длиннее</td>
-                  </tr>
-                  <tr>
-                    <td>ИНН</td>
-                    <td>790562154765786</td>
-                  </tr>
-                </table>
-                <table>
-                  <tr>
-                    <td>ОГРН</td>
-                    <td>9084523657492637523672</td>
-                  </tr>
-                  <tr>
-                    <td>КПП</td>
-                    <td>453415007871346</td>
-                  </tr>
-                </table>
-              </div>
+        </div>        
+        <div class="card__w" id="ank1">
+          <div class="card__l">
+            <div class="card__gal-row">
+              <a class="card__arr"><img src="img/arr-up-gal.svg" /></a><a class="card__gal"></a><a class="card__gal"></a><a class="card__gal"></a><a class="card__gal"></a><a class="card__gal"></a>
+              <a class="card__arr"><img src="img/arr-dw-gal.svg" /></a>
             </div>
-            <div class="serv">
-              <div class="serv__title">Товары и услуги</div>
-              <div class="serv__row">
-                <ul>
-                  <li><a href="">Маргарин </a></li>
-                  <li><a href=""> Горчичный соус</a></li>
-                  <li><a href="">Майонез</a></li>
-                  <li><a href="">Питьевая вода</a></li>
-                  <li><a href="">Ячневая крупа</a></li>
-                  <li><a href="">Яблоки</a></li>
-                  <li><a href="">Гороховая крупа</a></li>
-                  <li><a href="">Кукурузная крупа</a></li>
-                  <li><a href="">Пшеничная крупа</a></li>
-                </ul>
-              </div>
-            </div>
+            <div class="card__img"><img src="img/card-prod.jpg" /></div>
           </div>
-          <!--r-->
+          <div class="card__r">
+            <div class="card__title">Характеристики</div>
+            <div class="card__charact">
+              <div class="card__charact-row">
+                <div class="card__charact-name">Производитель</div>
+                <div class=""><a href="">ООО "Аквапэт" (Краснодар)</a></div>
+              </div>
+              <div class="card__charact-row">
+                <div class="card__charact-name">Источник</div>
+                <div class="card__charact-des">Артезианская скважина глубиной 201 м №7774</div>
+              </div>
+              <div class="card__charact-row">
+                <div class="card__charact-name">Тип тары</div>
+                <div class="card__charact-des">Одноразовая</div>
+              </div>
+              <div class="card__charact-row">
+                <div class="card__charact-name">Объем бутыли</div>
+                <div class="card__charact-des">10 литров</div>
+              </div>
+              <div class="card__charact-row">
+                <div class="card__charact-name">Вид воды</div>
+                <div class="card__charact-des">Природная артезианская</div>
+              </div>
+              <div class="card__charact-row">
+                <div class="card__charact-name">Тип упаковки</div>
+                <div class="card__charact-des">Полиэтилентерефталат (ПЭТ)</div>
+              </div>
+              <a class="collapse">Свернуть список</a>
+            </div>
+            <p class="card__txt">Питьевая вода из артезианской скважины глубиной 201 м изготавливается по инновационной технологии путем активирования кремнием и не имеет аналогов в России.</p>
+            <a class="expand">Развернуть описание</a>
+          </div>
         </div>
+
+
+
       </div>
 
       <section class="prodcompany" id="ank5">
