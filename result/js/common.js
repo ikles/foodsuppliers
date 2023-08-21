@@ -113,6 +113,69 @@ jQuery(document).ready(function( $ ) {
     ]
   });
 
+  $('.prodcompany__list').slick({
+    infinite: false,    
+    speed: 600,
+    slidesToScroll: 1,
+    autoplay: false,    
+    slidesToShow: 5,
+    cssEase: 'linear',  
+    autoplaySpeed: 0,  
+    arrows: true,
+    dots: false,
+    pauseOnHover: true,  
+    responsive: [
+    {
+      breakpoint: 1381,
+      settings: {
+        slidesToShow: 5
+      }
+    },   
+    ]
+  });
+
+
+
+
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav',
+    responsive: [
+
+    {
+      breakpoint: 641,
+      settings: {
+        arrows: true
+      }
+    }
+    ]
+  });
+
+  $('.slider-nav').slick({
+    infinite: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    arrows: true,
+    centerMode: false,
+    vertical: true,
+    focusOnSelect: true,
+    responsive: [
+
+    {
+      breakpoint: 1200,
+      settings: {
+        vertical: false,
+        slidesToShow: 3
+      }
+    }
+    ]
+  });
+
 
   $('.more').click(function (e) {
     e.preventDefault();
@@ -133,6 +196,20 @@ jQuery(document).ready(function( $ ) {
 
   tabs('.ncats__tabs');
 
+
+
+  //$('.accordion-content').first().slideDown().toggleClass('open-content');
+  $('.accordion-header').click(function () {
+    $(this).toggleClass('active-header');
+    $(this).prev().slideToggle().toggleClass('open-content');
+
+    if( ! $(this).hasClass('active-header') ) {
+      $(this).text($(this).attr('data-show'));
+    }
+    else {
+     $(this).text($(this).attr('data-hide')); 
+   }
+ });
 
 
 
