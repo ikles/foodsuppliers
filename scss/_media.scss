@@ -45,11 +45,18 @@
   width: 100%;
 }
 
-@media only screen and (max-width : 1367px) {
+
+@media (max-width : 1650px) {
+.contain {
+    max-width: 1300px
+  }      
+}//1650
+
+@media only screen and (max-width : 1400px) {
   .contain {
     max-width: 1170px
   }      
-}//1415
+}//1367
 
 @media only screen and (max-width : 1199px) {
   .contain {

@@ -42,11 +42,29 @@ jQuery(document).ready(function( $ ) {
     pauseOnHover: true,  
     responsive: [
     {
-      breakpoint: 1381,
+      breakpoint: 1201,
       settings: {
-        slidesToShow: 5
+        slidesToShow: 4
       }
     },   
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3
+      }
+    },   
+    {
+      breakpoint: 641,
+      settings: {
+        slidesToShow: 2
+      }
+    },   
+    {
+      breakpoint: 376,
+      settings: {
+        slidesToShow: 1
+      }
+    }
     ]
   });
 
@@ -63,11 +81,23 @@ jQuery(document).ready(function( $ ) {
     pauseOnHover: true,  
     responsive: [
     {
-      breakpoint: 1381,
+      breakpoint: 1401,
       settings: {
-        slidesToShow: 5
+        slidesToShow: 3
       }
     },   
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1
+      }
+    },
     ]
   });
 
@@ -84,9 +114,15 @@ jQuery(document).ready(function( $ ) {
     pauseOnHover: true,  
     responsive: [
     {
-      breakpoint: 1381,
+      breakpoint: 1201,
       settings: {
-        slidesToShow: 5
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1
       }
     },   
     ]
@@ -105,11 +141,23 @@ jQuery(document).ready(function( $ ) {
     pauseOnHover: true,  
     responsive: [
     {
-      breakpoint: 1381,
+      breakpoint: 1201,
       settings: {
-        slidesToShow: 5
+        slidesToShow: 3
       }
     },   
+    {
+      breakpoint: 641,
+      settings: {
+        slidesToShow: 2
+      }
+    },  
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 1
+      }
+    },
     ]
   });
 
@@ -134,6 +182,40 @@ jQuery(document).ready(function( $ ) {
     ]
   });
 
+  $('.brands__row').slick({
+    infinite: false,    
+    speed: 600,
+    slidesToScroll: 1,
+    autoplay: false,    
+    slidesToShow: 8,
+    cssEase: 'linear',  
+    autoplaySpeed: 0,  
+    arrows: false,
+    dots: false,
+    pauseOnHover: true,  
+    variableWidth: true,
+    responsive: [
+    {
+      breakpoint: 1651,
+      settings: {
+        slidesToShow: 6
+      }
+    },   
+    {
+      breakpoint: 1401,
+      settings: {
+        infinite: true,
+        slidesToShow: 4,
+        dots: true,
+        
+      }
+    }, 
+    ]
+  });
+
+  if( $(window).width() < 641 ) {
+    $('.hero form input[type="text"]').attr('placeholder', 'Найти...');
+  }
 
 
 
@@ -272,6 +354,16 @@ jQuery(document).ready(function( $ ) {
     scrollInertia: '230'
   });    
   
+
+
+
+  $('.burger').click(function () {
+    $(this).toggleClass('burger-open');
+    $('body').toggleClass("body-open");
+    $('.header__col').toggleClass("open");    
+  });
+
+
 
 
 /************************************/
