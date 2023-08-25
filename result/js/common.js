@@ -174,11 +174,30 @@ jQuery(document).ready(function( $ ) {
     pauseOnHover: true,  
     responsive: [
     {
-      breakpoint: 1381,
+      breakpoint: 1200,
       settings: {
-        slidesToShow: 5
+        slidesToShow: 4
       }
     },   
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3
+      }
+    }
+    ,   
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },    
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 1
+      }
+    }
     ]
   });
 
@@ -225,15 +244,7 @@ jQuery(document).ready(function( $ ) {
     arrows: false,
     fade: true,
     asNavFor: '.slider-nav',
-    responsive: [
-
-    {
-      breakpoint: 641,
-      settings: {
-        arrows: true
-      }
-    }
-    ]
+    
   });
 
   $('.slider-nav').slick({
@@ -247,12 +258,31 @@ jQuery(document).ready(function( $ ) {
     vertical: true,
     focusOnSelect: true,
     responsive: [
-
+    {
+      breakpoint: 1401,
+      settings: {        
+        slidesToShow: 4
+      }
+    },
     {
       breakpoint: 1200,
-      settings: {
-        vertical: false,
+      settings: {        
         slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {        
+        vertical: false,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {        
+        vertical: false,
+        arrows: false,
+        slidesToShow: 4
       }
     }
     ]
@@ -353,6 +383,28 @@ jQuery(document).ready(function( $ ) {
     mouseWheel: 1,
     scrollInertia: '230'
   });    
+
+
+  if( $(window).width() < 1200 ) {
+    $(".infos__table-w").mCustomScrollbar({
+      axis: "x",
+      theme: "dark-3",
+      mouseWheel: 1,
+      scrollInertia: '230'
+    });      
+  }
+
+
+  $(window).resize(function() {
+    if( $(window).width() < 1200 ) {
+      $(".infos__table-w").mCustomScrollbar({
+        axis: "x",
+        theme: "dark-3",
+        mouseWheel: 1,
+        scrollInertia: '230'
+      });      
+    }
+  });
   
 
 

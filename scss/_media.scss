@@ -1,5 +1,8 @@
 .lcpadding {
   padding-left: calc((100% - 1616px)/2);    
+  @media only screen and (max-width : 1650px) {
+    padding-left: calc((100% - 1330px)/2);
+  }
   @media only screen and (max-width : 1199px) {
     padding-left: calc((100% - 970px)/2);
   }
@@ -21,6 +24,12 @@
 
 .rcpadding {  
   padding-right: calc((100% - 1616px)/2);
+  @media only screen and (max-width : 1650px) {
+    padding-right: calc((100% - 1330px)/2);
+  }
+  @media only screen and (max-width : 1400px) {
+    padding-right: calc((100% - 1170px)/2);
+  }
   @media only screen and (max-width : 1199px) {    
     padding-right: calc((100% - 970px)/2);
   }

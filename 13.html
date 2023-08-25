@@ -69,56 +69,56 @@
             1970 г. начался выпуск майонеза.</p>
             <p>В 2013 г. планировалось закрытие предприятия для постройки на его месте жилого квартала. Однако проект
             был отклонен инвесторами, завод по-прежнему функционирует.</p>
-            <div class="requisites">
-              <p>Реквизиты</p>
-              <div class="requisites__content">
-                <table>
-                  <tr>
-                    <td>Название юр лица</td>
-                    <td>ООО название может быть длиннее</td>
-                  </tr>
-                  <tr>
-                    <td>ИНН</td>
-                    <td>790562154765786</td>
-                  </tr>
-                </table>
-                <table>
-                  <tr>
-                    <td>ОГРН</td>
-                    <td>9084523657492637523672</td>
-                  </tr>
-                  <tr>
-                    <td>КПП</td>
-                    <td>453415007871346</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <div class="serv">
-              <div class="serv__title">Товары и услуги</div>
-              <div class="serv__row">
-                <ul>
-                  <li><a href="">Маргарин </a></li>
-                  <li><a href=""> Горчичный соус</a></li>
-                  <li><a href="">Майонез</a></li>
-                  <li><a href="">Питьевая вода</a></li>
-                  <li><a href="">Ячневая крупа</a></li>
-                  <li><a href="">Яблоки</a></li>
-                  <li><a href="">Гороховая крупа</a></li>
-                  <li><a href="">Кукурузная крупа</a></li>
-                  <li><a href="">Пшеничная крупа</a></li>
-                </ul>
-              </div>
-            </div>
           </div>
           <!--r-->
         </div>
+        <div class="requisites">
+          <p>Реквизиты</p>
+          <div class="requisites__content">
+            <table>
+              <tr>
+                <td>Название юр лица</td>
+                <td>ООО название может быть длиннее</td>
+              </tr>
+              <tr>
+                <td>ИНН</td>
+                <td>790562154765786</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>ОГРН</td>
+                <td>9084523657492637523672</td>
+              </tr>
+              <tr>
+                <td>КПП</td>
+                <td>453415007871346</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="serv">
+          <div class="serv__title">Товары и услуги</div>
+          <div class="serv__row">
+            <ul>
+              <li><a href="">Маргарин </a></li>
+              <li><a href=""> Горчичный соус</a></li>
+              <li><a href="">Майонез</a></li>
+              <li><a href="">Питьевая вода</a></li>
+              <li><a href="">Ячневая крупа</a></li>
+              <li><a href="">Яблоки</a></li>
+              <li><a href="">Гороховая крупа</a></li>
+              <li><a href="">Кукурузная крупа</a></li>
+              <li><a href="">Пшеничная крупа</a></li>
+            </ul>
+          </div>
+        </div>                  
       </div>
 
       <section class="prodcompany" id="ank5">
         <div class="contain">
           <div class="h2 _red">
-            Продукция компании <a href="" class="all">Показать все</a>
+            <div>Продукция компании</div> <a href="" class="all">Показать все</a>
           </div>
           <div class="prodcompany__list">
             @@include('var/_prod__item-noslider.html',{
@@ -164,11 +164,12 @@
           </div>
         </div>
       </section>
-      <section class="news" id="ank2">
+      <section class="news news_2" id="ank2">
         <div class="contain">
           <div class="h2-wrap">
             <div class="h2-w small _red">
-              <div class="h3">Новости компании
+              <div class="h3">
+                <div>Новости компании</div>
                 <a href="" class="all">Показать все</a>
               </div>
               <p class="small">Май - Июнь, 2022</p>
@@ -195,7 +196,7 @@
 
       <section class="map" id="ank3">
         <div class="map__l">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3603b28e0c905ad21c7582917189e9a0e187bf39602b5c1b922ae04d6e15d407&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+          @@include('var/_map.html')
         </div>
         <div class="map__r rcpadding">
           <div class="map__top">
@@ -303,7 +304,7 @@
     <section class="dcompanies">   
       <div class="contain">
         <div class="h2 _red">
-          Компании отрасли <a href="" class="all">Показать все</a>
+          <div>Компании отрасли</div> <a href="" class="all">Показать все</a>
         </div>
         <div class="dcompanies__list">
           @@include('var/_comp__item.html',{
