@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>18. ACC-ADDBOARD</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main inner-page">
+     <div class="contain">
+      <ul class="bread">
+        <li><a href="">Главная</a></li>                      
+        <li>Личный кабинет</li>
+      </ul>
+      <div class="h1-w">
+        <h1>Добавить компанию</h1>              
+      </div>
+      <div class="row">
+       <div class="col-l">
+        <div class="message">
+          <p>Для прохождения модерации рекомендуется: <span class="message__hide">Скрыть</span></p>
+          <ul>
+            <li>Описывать свою компанию или продукцию более объективно, оперируя измереяемыми показателями, а не субъективным мнением (сказать или написать, что ваш продукт самый лучший, конечно же можно (так не делайте), но это нельзя измерить, лучше аргументированно описать его преимущества, предоставить характеристики и другие изменяемые показатели);</li>
+            <li>Не пытаться прописывать ссылки в описании, для этого есть специальное поле;</li>
+            <li>Ссылка на сайт должна быть в виде URL, а не содержать ключевые слова;</li>
+            <li>Отформатировать текст для удобства восприятия</li>
+          </ul>          
+        </div>
+
+        <form>
+          <div class="edit__block">
+            <div class="h3">Общая информация</div>
+            <div class="edit__row">
+              <div class="edit__col-100">
+                <input type="text" placeholder="Название компании">
+              </div>
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <label class="addform_file-label">                  
+                  <input size="40" accept=".jpg,.jpeg,.png"
+                  class="multi-file-input" type="file" id="fileMulti" aria-invalid="false">
+                  <span class="addform_file-box">
+                    <div>Логотип</div>
+                    <span>Выбрать файл</span>
+                  </span>
+                </label>
+              </div>            
+              <div class="edit__col-50 items-center">
+                <div class="addform__info">Максимальный размер файла: 1 МБ. <br>
+                Допустимые типы файлов: png jpg jpeg</div>
+              </div>
+            </div>
+            <div class="file__total">
+              Выбран файл: <span>Не выбрано</span>
+              <div></div>
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <select>
+                  <option value="Выберите регион">Выберите регион</option>
+                  <option value="Москва">Москва</option>
+                </select>
+              </div>
+              <div class="edit__col-50">
+                <input type="text" placeholder="Населённый пункт" class="_search">
+              </div>
+            </div>
+            <div class="edit__plus-w">
+              <div class="edit__row">
+                <div class="edit__col-33">
+                  <select>
+                    <option value="Производитель">Производитель</option>
+                    <option value="Лента">Лента</option>
+                  </select>
+                </div>
+                <div class="edit__col-33"></div>
+                <div class="edit__col-33"></div>
+              </div>
+            </div>
+            <div class="edit__plus-w">
+              <div class="edit__row">
+                <div class="edit__col-33">
+                  <select>
+                    <option value="Продукты питания">Продукты питания</option>
+                    <option value="Бытовая химия">Бытовая химия</option>
+                  </select>
+                </div>
+                <div class="edit__col-33">
+                  <select>
+                    <option value="Бакалея">Бакалея</option>
+                    <option value="Маргарин">Маргарин</option>                  
+                  </select>
+                </div>
+                <div class="edit__col-33">
+                  <select>
+                    <option value="Маргарин">Маргарин</option>                  
+                    <option value="Бакалея">Бакалея</option>
+                  </select>
+                </div>
+              </div>
+              <div class="edit__plus"></div>
+            </div>
+            <div class="pline__row">
+              <ul>
+                <li>Продукты питания</li>
+                <li>Бакалея</li>
+                <li>Маргарин</li>
+              </ul>
+              <div class="pline__del">Удалить</div>
+            </div>
+            <div class="pline__row">
+              <ul>                
+                <li>Производственное оборудование</li>
+                <li>Кондитерское оборудование</li>
+                <li>Производство мороженного</li>
+              </ul>
+              <div class="pline__del">Удалить</div>
+            </div>
+            <div class="edit__short-desc">
+              <div><img src="img/mce.jpg" alt=""></div>
+              <textarea placeholder="Краткое описание"></textarea>  
+            </div>
+            <div class="edit__desc">
+              <div><img src="img/mce.jpg" alt=""></div>
+              <textarea placeholder="Краткое описание"></textarea>  
+            </div>
+            <p>Описывайте компанию объективно, избегая рекламных клише и необоснованных статусов и регалий
+            </p>
+          </div>
+          <div class="edit__block">
+            <div class="h3">Фотогалерея</div>
+
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <label class="addform_file-label">                  
+                  <input size="40" accept=".jpg,.jpeg,.png"
+                  class="multi-file-input" type="file" id="fileMulti2" aria-invalid="false">
+                  <span class="addform_file-box">
+                    <div class="filetext">Добавить новый файл</div>
+                    <span>Добавить фото</span>
+                  </span>
+                </label>
+              </div>
+              <div class="edit__col-50">
+                <div class="addform__info">Максимальный размер файла: 1 МБ. Допустимые типы файлов: png jpg jpeg <br>
+                Images must be at least 261x182 pixels.</div>
+              </div>
+            </div>
+
+            <div class="edit__thumbs">
+              <div><img src="img/gal-3.jpg" alt=""><span></span></div>
+              <div><img src="img/gal-3.jpg" alt=""><span></span></div>
+              <div><img src="img/gal-3.jpg" alt=""><span></span></div>
+              <div><img src="img/gal-3.jpg" alt=""><span></span></div>
+              <div><img src="img/gal-3.jpg" alt=""><span></span></div>
+              <div><img src="img/gal-3.jpg" alt=""><span></span></div>
+              <div><img src="img/gal-3.jpg" alt=""><span></span></div>
+            </div>
+
+            <div class="thumbs__del">Удалить все фото</div>
+
+          </div>
+        </form>
+      </div><!--col-l-->
+      <div class="col-r">
+
+      </div><!--col-r-->
+    </div>   
+  </div>   
+</main>
+@@include('var/_footer.html')
+</div>
+@@include('var/_scripts.html')
+</body>
+</html>

@@ -24,6 +24,80 @@ jQuery(document).ready(function( $ ) {
   });
 
 
+  $('.message__hide').click(function () {
+    $(this).closest('.message').fadeOut();
+  });
+
+
+  let inputFile = document.querySelector('#fileMulti');
+  let imgWrapper = document.querySelector('.file__total > span');
+
+
+  function download2(input) {
+    let file = input.files[0];
+
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+
+    reader.onload = ev => {
+      const src = ev.target.result
+      imgWrapper.innerHTML = `${file.name}`
+    }
+  }
+
+
+  if ($('#fileMulti').length) {
+    inputFile.addEventListener("change", function () {
+      download2(this);
+    });
+  }
+
+
+///
+
+
+  let inputFile2 = document.querySelector('#fileMulti2');
+  let imgWrapper2 = document.querySelector('.filetext');
+
+
+  function download3(input) {
+    let file = input.files[0];
+
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+
+    reader.onload = ev => {
+      const src = ev.target.result
+      imgWrapper2.innerHTML = `${file.name}`
+    }
+  }
+
+
+  if ($('#fileMulti2').length) {
+    inputFile2.addEventListener("change", function () {
+      download3(this);
+    });
+  }
+
+
+  ///
+
+  $('.edit__thumbs > div').click(function () {
+    $(this).remove();
+  });
+
+  $('.thumbs__del').click(function () {
+    $(this).remove();
+    $('.edit__thumbs > div').remove();
+  });
+
+
+  $('.pline__del').click(function () {
+    $(this).closest('.pline__row').remove();  
+  });
+
+
+
 //levels menu
   let isMobile={Android:function(){return navigator.userAgent.match(/Android/i)},BlackBerry:function(){return navigator.userAgent.match(/BlackBerry/i)},iOS:function(){return navigator.userAgent.match(/iPhone|iPad|iPod/i)},Opera:function(){return navigator.userAgent.match(/Opera Mini/i)},Windows:function(){return navigator.userAgent.match(/IEMobile/i)},any:function(){return(isMobile.Android()||isMobile.BlackBerry()||isMobile.iOS()||isMobile.Opera()||isMobile.Windows())}}
 
