@@ -24,9 +24,7 @@ jQuery(document).ready(function( $ ) {
   });
 
 
-  $('.message__hide').click(function () {
-    $(this).closest('.message').fadeOut();
-  });
+
 
 
   let inputFile = document.querySelector('#fileMulti');
@@ -396,6 +394,25 @@ jQuery(document).ready(function( $ ) {
      $(this).text($(this).attr('data-hide')); 
    }
  });
+
+
+
+  $('.message__hide').click(function () {
+    const main = $(this).closest('.message');
+    const content = main.find('.message__content');
+    
+    if( ! main.hasClass('hide') ) {
+      $(this).text($(this).attr('data-show'));
+      main.addClass('hide');
+      content.slideUp();
+    }
+    else {
+     $(this).text($(this).attr('data-hide')); 
+     main.removeClass('hide');
+     content.slideDown();
+   }
+ });
+
 
 
 

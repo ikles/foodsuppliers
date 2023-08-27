@@ -6,7 +6,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>18. ACC-ADDCOMPANY</title>
+  <title>19. ACC-ADDBOARD</title>
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/select2.min.css">
@@ -60,22 +60,22 @@
           <li>Личный кабинет</li>
         </ul>
         <div class="h1-w">
-          <h1>Добавить компанию</h1>              
+          <h1>Добавить объявление</h1>              
         </div>
         <div class="message">
-          <p>Для прохождения модерации рекомендуется: <span data-hide="Скрыть" data-show="Развернуть" class="message__hide">Скрыть</span></p>
+          <p>Для прохождения модерации рекомендуется: <span data-hide="Скрыть" data-show="Развернуть" class="message__hide">Скрыть</span></p>          
           <div class="message__content">
-            <ul>
-              <li>Описывать свою компанию или продукцию более объективно, оперируя измереяемыми показателями, а не субъективным мнением (сказать или написать, что ваш продукт самый лучший, конечно же можно (так не делайте), но это нельзя измерить, лучше аргументированно описать его преимущества, предоставить характеристики и другие изменяемые показатели);</li>
-              <li>Не пытаться прописывать ссылки в описании, для этого есть специальное поле;</li>
-              <li>Ссылка на сайт должна быть в виде URL, а не содержать ключевые слова;</li>
-              <li>Отформатировать текст для удобства восприятия</li>
-            </ul>          
+            <ul>                        
+              <li>Все похожие и однотипные товары/услуги размещайте в рамках одного объявления, крайне нежелательно дублировать множество страниц и одинаковым содержанием;</li>
+              <li>Описывать свою продукцию более объективно, оперируя измереяемыми показателями, а не субъективным мнением (сказать или написать, что ваш продукт самый лучший, конечно же можно (так не делайте), но это нельзя измерить, лучше аргументированно описать его преимущества, предоставить характеристики и другие изменяемые показатели);</li>
+              <li>Не пытаться прописывать ссылки в описании объявления, для этого есть специальное поле (если объявление написано только для получения ссылки на свой сайт, то такое объявление будет отклонено);</li>
+              <li>Для того чтобы ваше объявление лучше ранжировалась в поисковых системах, желательно использовать уникальный текст объявления, а также включить в его заголовок ключевые слова, символизирующие ваш товар).</li>
+            </ul>
           </div>
         </div>
         <form class="edit__form edit__form-1">
           <div class="edit__block">
-            <div class="h3">Общая информация</div>
+            <div class="h3">Описание</div>
             <div class="edit__row">
               <div class="edit__col-100">
                 <input type="text" placeholder="Название компании">
@@ -87,20 +87,53 @@
                   <input size="40" accept=".jpg,.jpeg,.png"
                   class="multi-file-input" type="file" id="fileMulti" aria-invalid="false">
                   <span class="addform_file-box">
-                    <div>Логотип</div>
+                    <div>Изображение</div>
                     <span>Выбрать файл</span>
                   </span>
                 </label>
               </div>            
               <div class="edit__col-50 items-center">
-                <div class="addform__info">Максимальный размер файла: 1 МБ. <br>
-                Допустимые типы файлов: png jpg jpeg</div>
+                <div class="addform__info">Максимальный размер файла: 1 МБ. Допустимые типы файлов: png jpg jpeg
+                Images must be at least 300x300 pixels.</div>
               </div>
             </div>
             <div class="file__total">
               Выбран файл: <span>Не выбрано</span>
               <div></div>
             </div>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <select>
+                  <option value="Направление деятельности">Направление деятельности</option>
+                  <option value="Москва">Москва</option>
+                </select>
+              </div>
+              <div class="edit__col-50">
+                <select>
+                  <option value="Выберите значение">Выберите значение</option>
+                  <option value="Москва">Москва</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="edit__row">
+              <div class="edit__col-100">
+                <div class="radio__row">
+                  <div>Тип объявления:</div>
+                  <label>
+                    <input type="radio" name="type" checked>
+                    <span></span>
+                    <div>Спрос</div>
+                  </label>                  
+                  <label class="edit__radio">
+                    <input type="radio" name="type">
+                    <span></span>
+                    <div>Предложение</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+
             <div class="edit__row">
               <div class="edit__col-50">
                 <select>
@@ -112,70 +145,29 @@
                 <input type="text" placeholder="Населённый пункт" class="_search">
               </div>
             </div>
-            <div class="edit__plus-w">
-              <div class="edit__row">
-                <div class="edit__col-33">
-                  <select>
-                    <option value="Производитель">Производитель</option>
-                    <option value="Лента">Лента</option>
-                  </select>
-                </div>
-                <div class="edit__col-33"></div>
-                <div class="edit__col-33"></div>
-              </div>
-            </div>
-            <div class="edit__plus-w">
-              <div class="edit__row">
-                <div class="edit__col-33">
-                  <select>
-                    <option value="Продукты питания">Продукты питания</option>
-                    <option value="Бытовая химия">Бытовая химия</option>
-                  </select>
-                </div>
-                <div class="edit__col-33">
-                  <select>
-                    <option value="Бакалея">Бакалея</option>
-                    <option value="Маргарин">Маргарин</option>
-                  </select>
-                </div>
-                <div class="edit__col-33">
-                  <select>
-                    <option value="Маргарин">Маргарин</option>                  
-                    <option value="Бакалея">Бакалея</option>
-                  </select>
-                </div>
-              </div>
-              <div class="edit__plus"></div>
-            </div>
-            <div class="pline__row">
-              <ul>
-                <li>Продукты питания</li>
-                <li>Бакалея</li>
-                <li>Маргарин</li>
-              </ul>
-              <div class="pline__del">Удалить</div>
-            </div>
-            <div class="pline__row">
-              <ul>                
-                <li>Производственное оборудование</li>
-                <li>Кондитерское оборудование</li>
-                <li>Производство мороженного</li>
-              </ul>
-              <div class="pline__del">Удалить</div>
-            </div>
-            <div class="edit__short-desc">
-              <div><img src="img/mce.jpg" alt=""></div>
-              <textarea placeholder="Краткое описание"></textarea>  
-            </div>
+
             <div class="edit__desc">
               <div><img src="img/mce.jpg" alt=""></div>
               <textarea placeholder="Описание"></textarea>  
+            </div>            
+            <div class="edit__row">
+              <div class="edit__col-100">
+                <p>Описывайте объявление объективно, избегая рекламных клише и необоснованных статусов и регалий.
+                </p>
+              </div>
             </div>
-            <p>Описывайте компанию объективно, избегая рекламных клише и необоснованных статусов и регалий
-            </p>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <input type="text" placeholder="Цена" class="">
+              </div>
+              <div class="edit__col-50">
+                <input type="text" placeholder="Дата актуальности" class="_date">
+              </div>
+            </div>
+
           </div>
           <div class="edit__block">
-            <div class="h3">Фотогалерея</div>
+            <div class="h3">Фотографии</div>
             <div class="edit__row">
               <div class="edit__col-50">
                 <label class="addform_file-label">                  
@@ -191,36 +183,14 @@
                 <div class="addform__info">Максимальный размер файла: 1 МБ. Допустимые типы файлов: png jpg jpeg <br>
                 Images must be at least 261x182 pixels.</div>
               </div>
-            </div>
-            <div class="edit__thumbs">
-              <div><img src="img/gal-3.jpg" alt=""><span></span></div>
-              <div><img src="img/gal-3.jpg" alt=""><span></span></div>
-              <div><img src="img/gal-3.jpg" alt=""><span></span></div>
-              <div><img src="img/gal-3.jpg" alt=""><span></span></div>
-              <div><img src="img/gal-3.jpg" alt=""><span></span></div>
-              <div><img src="img/gal-3.jpg" alt=""><span></span></div>
-              <div><img src="img/gal-3.jpg" alt=""><span></span></div>
-            </div>
-            <div class="thumbs__del">Удалить все фото</div>
+            </div>                        
           </div>
           <div class="edit__block">
             <div class="h3">Контакты</div>
-            <div class="edit__row">
-              <div class="edit__col-100">
-                <input type="text" placeholder="Полное название " class="">
-              </div>
-            </div>
+            
             <div class="edit__row">
               <div class="edit__col-100">
                 <input type="text" placeholder="Адрес" class="_geo">
-              </div>
-            </div>
-            <div class="edit__row">
-              <div class="edit__col-50">
-                <input type="text" placeholder="ИНН " class="">
-              </div>
-              <div class="edit__col-50">
-                <input type="text" placeholder="График работы " class="_date">
               </div>
             </div>
             <div class="edit__row">
@@ -239,10 +209,7 @@
                 </div>
               </div>
               <div class="edit__col-50">
-                <div class="edit__mail">
-                  Уже добавлен: <span>delovoy@mail.ru</span>
-                  <div></div>
-                </div>
+
               </div>
             </div>
             <div class="edit__row">
@@ -261,13 +228,11 @@
                 <p>Заголовок ссылки ограничен максимум 128 символами.</p>
               </div>
             </div>
-            <div class="edit__map1">
-              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3603b28e0c905ad21c7582917189e9a0e187bf39602b5c1b922ae04d6e15d407&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
-            </div>
-            <p>Найдите нужный адрес через кнопку "Найти", затем добавьте точку на это место на карте.</p>
+            
+            
           </div>
           <div class="edit__actions">
-            <button class="btn">Добавить компанию</button>
+            <button class="btn">Добавить объявление</button>
           </div>
         </form>
       </div><!--col-l-->

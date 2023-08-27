@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>20. ACC-ADDSTUFF</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main inner-page">
+     <div class="contain">      
+      <div class="row">
+       <div class="col-l">
+        <ul class="bread">
+          <li><a href="">Главная</a></li>                      
+          <li>Личный кабинет</li>
+        </ul>
+        <div class="h1-w">
+          <h1>Добавить продукцию</h1>              
+        </div>
+        <div class="message">
+          <p>Для прохождения модерации рекомендуется: <span data-hide="Скрыть" data-show="Развернуть" class="message__hide">Скрыть</span></p>
+          <div class="message__content">
+            <ul>
+              <li>Описывать свою компанию или продукцию более объективно, оперируя измереяемыми показателями, а не субъективным мнением (сказать или написать, что ваш продукт самый лучший, конечно же можно (так не делайте), но это нельзя измерить, лучше аргументированно описать его преимущества, предоставить характеристики и другие изменяемые показатели);</li>
+              <li>Не пытаться прописывать ссылки в описании, для этого есть специальное поле;</li>
+              <li>Ссылка на сайт должна быть в виде URL, а не содержать ключевые слова;</li>
+              <li>Отформатировать текст для удобства восприятия</li>
+            </ul>          
+          </div>
+        </div>
+        <form class="edit__form edit__form-1">
+          <div class="edit__block">
+            <div class="h3">Описание</div>
+            <div class="edit__row">
+              <div class="edit__col-100">
+                <select>
+                  <option value="Товар от компании Вимм-Биль-Данн">Товар от компании Вимм-Биль-Данн</option>
+                  <option value="Москва">Москва</option>
+                </select>
+                <button class="btn"><i></i> Добавить новую компанию</button>
+              </div>
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-100">
+                <input type="text" placeholder="Название товара">
+              </div>
+            </div>
+
+
+
+            
+            
+            <div class="edit__row">
+              <div class="edit__col-33">
+                <select>
+                  <option value="Продукты питания">Продукты питания</option>
+                  <option value="Бытовая химия">Бытовая химия</option>
+                </select>
+              </div>
+              <div class="edit__col-33">
+                <select>
+                  <option value="Бакалея">Бакалея</option>
+                  <option value="Маргарин">Маргарин</option>
+                </select>
+              </div>
+              <div class="edit__col-33">
+                <select>
+                  <option value="Маргарин">Маргарин</option>                  
+                  <option value="Бакалея">Бакалея</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <select>
+                  <option value="Выберите регион">Выберите регион</option>
+                  <option value="Москва">Москва</option>
+                </select>
+              </div>
+              <div class="edit__col-50">
+                <input type="text" placeholder="Населённый пункт" class="_search">
+              </div>
+            </div>
+            <div class="edit__desc">
+              <div><img src="img/mce.jpg" alt=""></div>
+              <textarea placeholder="Описание продукции"></textarea>  
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-100">
+                <p>Описывайте компанию объективно, избегая рекламных клише и необоснованных статусов и регалий              
+                </p>
+              </div>
+            </div>
+
+            <div class="edit__row">
+              <div class="edit__col-c">
+                <input type="text" placeholder="Цена" class="">
+                <select>
+                  <option value="Р/шт">Р/шт</option>
+                  <option value="Москва">Москва</option>
+                </select>
+              </div>
+              <div class="edit__col-c">
+                <input type="text" placeholder="Цена" class="">
+                <select>
+                  <option value="Р/шт">Р/шт</option>
+                  <option value="Москва">Москва</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+          <div class="edit__block">
+            <div class="h3">Фотографии продукции</div>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <label class="addform_file-label">                  
+                  <input size="40" accept=".jpg,.jpeg,.png"
+                  class="multi-file-input" type="file" id="fileMulti2" aria-invalid="false">
+                  <span class="addform_file-box">
+                    <div class="filetext">Добавить фото продукции</div>
+                    <span>Добавить фото</span>
+                  </span>
+                </label>
+              </div>
+              <div class="edit__col-50 items-center">
+                <div class="addform__info">Максимальный размер файла: 1 МБ. Допустимые типы файлов: png jpg jpeg <br>
+                Images must be at least 261x182 pixels.</div>
+              </div>
+            </div>
+            <div class="edit__thumbs">
+              <div><img src="img/editgal-1.jpg" alt=""><span></span></div>
+              <div><img src="img/editgal-2.jpg" alt=""><span></span></div>
+              <div><img src="img/editgal-3.jpg" alt=""><span></span></div>            
+            </div>
+            <div class="thumbs__del">Удалить все фото</div>
+          </div>
+
+          <div class="edit__actions">
+            <button class="btn">Добавить продукт</button>
+            <div class="romeve__prod">Удалить товар</div>
+          </div>
+        </form>
+      </div><!--col-l-->
+      <div class="col-r">
+        @@include('var/_account__actions.html')
+      </div><!--col-r-->
+    </div>   
+  </div>   
+</main>
+@@include('var/_footer.html')
+</div>
+@@include('var/_scripts.html')
+</body>
+</html>

@@ -6,7 +6,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>18. ACC-ADDBOARD</title>
+  <title>18. ACC-ADDCOMPANY</title>
   @@include('var/_styless.html')
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,27 +20,28 @@
   <div class="wrapper">
     @@include('var/_header.html')
     <main class="main inner-page">
-     <div class="contain">
-      <ul class="bread">
-        <li><a href="">Главная</a></li>                      
-        <li>Личный кабинет</li>
-      </ul>
-      <div class="h1-w">
-        <h1>Добавить компанию</h1>              
-      </div>
+     <div class="contain">      
       <div class="row">
        <div class="col-l">
-        <div class="message">
-          <p>Для прохождения модерации рекомендуется: <span class="message__hide">Скрыть</span></p>
-          <ul>
-            <li>Описывать свою компанию или продукцию более объективно, оперируя измереяемыми показателями, а не субъективным мнением (сказать или написать, что ваш продукт самый лучший, конечно же можно (так не делайте), но это нельзя измерить, лучше аргументированно описать его преимущества, предоставить характеристики и другие изменяемые показатели);</li>
-            <li>Не пытаться прописывать ссылки в описании, для этого есть специальное поле;</li>
-            <li>Ссылка на сайт должна быть в виде URL, а не содержать ключевые слова;</li>
-            <li>Отформатировать текст для удобства восприятия</li>
-          </ul>          
+        <ul class="bread">
+          <li><a href="">Главная</a></li>                      
+          <li>Личный кабинет</li>
+        </ul>
+        <div class="h1-w">
+          <h1>Добавить компанию</h1>              
         </div>
-
-        <form>
+        <div class="message">
+          <p>Для прохождения модерации рекомендуется: <span data-hide="Скрыть" data-show="Развернуть" class="message__hide">Скрыть</span></p>
+          <div class="message__content">
+            <ul>
+              <li>Описывать свою компанию или продукцию более объективно, оперируя измереяемыми показателями, а не субъективным мнением (сказать или написать, что ваш продукт самый лучший, конечно же можно (так не делайте), но это нельзя измерить, лучше аргументированно описать его преимущества, предоставить характеристики и другие изменяемые показатели);</li>
+              <li>Не пытаться прописывать ссылки в описании, для этого есть специальное поле;</li>
+              <li>Ссылка на сайт должна быть в виде URL, а не содержать ключевые слова;</li>
+              <li>Отформатировать текст для удобства восприятия</li>
+            </ul>          
+          </div>
+        </div>
+        <form class="edit__form edit__form-1">
           <div class="edit__block">
             <div class="h3">Общая информация</div>
             <div class="edit__row">
@@ -102,7 +103,7 @@
                 <div class="edit__col-33">
                   <select>
                     <option value="Бакалея">Бакалея</option>
-                    <option value="Маргарин">Маргарин</option>                  
+                    <option value="Маргарин">Маргарин</option>
                   </select>
                 </div>
                 <div class="edit__col-33">
@@ -136,14 +137,13 @@
             </div>
             <div class="edit__desc">
               <div><img src="img/mce.jpg" alt=""></div>
-              <textarea placeholder="Краткое описание"></textarea>  
+              <textarea placeholder="Описание"></textarea>  
             </div>
             <p>Описывайте компанию объективно, избегая рекламных клише и необоснованных статусов и регалий
             </p>
           </div>
           <div class="edit__block">
             <div class="h3">Фотогалерея</div>
-
             <div class="edit__row">
               <div class="edit__col-50">
                 <label class="addform_file-label">                  
@@ -155,12 +155,11 @@
                   </span>
                 </label>
               </div>
-              <div class="edit__col-50">
+              <div class="edit__col-50 items-center">
                 <div class="addform__info">Максимальный размер файла: 1 МБ. Допустимые типы файлов: png jpg jpeg <br>
                 Images must be at least 261x182 pixels.</div>
               </div>
             </div>
-
             <div class="edit__thumbs">
               <div><img src="img/gal-3.jpg" alt=""><span></span></div>
               <div><img src="img/gal-3.jpg" alt=""><span></span></div>
@@ -170,14 +169,78 @@
               <div><img src="img/gal-3.jpg" alt=""><span></span></div>
               <div><img src="img/gal-3.jpg" alt=""><span></span></div>
             </div>
-
             <div class="thumbs__del">Удалить все фото</div>
-
+          </div>
+          <div class="edit__block">
+            <div class="h3">Контакты</div>
+            <div class="edit__row">
+              <div class="edit__col-100">
+                <input type="text" placeholder="Полное название " class="">
+              </div>
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-100">
+                <input type="text" placeholder="Адрес" class="_geo">
+              </div>
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <input type="text" placeholder="ИНН " class="">
+              </div>
+              <div class="edit__col-50">
+                <input type="text" placeholder="График работы " class="_date">
+              </div>
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <input type="text" placeholder="Телефон" class="">
+                <div class="edit__plus2"></div>
+              </div>
+              <div class="edit__col-50">
+                <input type="text" placeholder="E-mail" class="">
+                <div class="edit__plus2"></div>
+              </div>
+              <div class="edit__col-50">
+                <div class="edit__tel">
+                  Уже добавлен: <span>+7 (495) 280 - 06 - 64</span>
+                  <div></div>
+                </div>
+              </div>
+              <div class="edit__col-50">
+                <div class="edit__mail">
+                  Уже добавлен: <span>delovoy@mail.ru</span>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <input type="text" placeholder="URL сайта" class="">                
+              </div>
+              <div class="edit__col-50">
+                <input type="text" placeholder="Заголовок сайта" class="">                
+              </div>
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <p>Адрес сайта с http(s): можно прописать UTM метку для анализа переходов</p>
+              </div>
+              <div class="edit__col-50">
+                <p>Заголовок ссылки ограничен максимум 128 символами.</p>
+              </div>
+            </div>
+            <div class="edit__map1">
+              @@include('var/_map.html')
+            </div>
+            <p>Найдите нужный адрес через кнопку "Найти", затем добавьте точку на это место на карте.</p>
+          </div>
+          <div class="edit__actions">
+            <button class="btn">Добавить компанию</button>
           </div>
         </form>
       </div><!--col-l-->
       <div class="col-r">
-
+        @@include('var/_account__actions.html')
       </div><!--col-r-->
     </div>   
   </div>   
