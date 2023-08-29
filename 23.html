@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>23. ACC-LOOK</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main inner-page">
+     <div class="contain">      
+      <div class="row">
+       <div class="col-l">
+        <ul class="bread">
+          <li><a href="">Главная</a></li>
+          <li>Добавить продукцию</li>
+        </ul>
+        <div class="h1-w items-center">
+          <h1>Мой профиль</h1>    
+          <a href="" class="edit__link">Редактировать профиль</a>
+        </div>
+        <form class="edit__form edit__form-1">
+          <div class="edit__block">
+            <div class="profile__top">
+              <div class="profile__w">
+                <div class="profile__img-w">                
+                  <img src="img/man.jpg">                
+                </div>
+                <div class="profile__r">
+                  <p>Иван Деловой</p>
+                  <div>Текущий тариф: &nbsp;&nbsp;<a href="">STANDART</a></div>
+                </div>
+              </div>
+              <a href="" class="profile__alert"><i></i>У вас 2 новых заказа</a>
+            </div>
+            <div class="h4">На модерации:</div>
+
+
+            <div class="profile__item">
+              <div class="lsort">
+                <ul>
+                  <li class="active"><a href="">Компании</a></li>
+                  <li><a href="">Товары</a></li>
+                  <li><a href="">Объявления</a></li>
+                </ul>
+                @@include('var/_sort.html')
+              </div>
+              <div class="profile__list">
+                <div class="comp__item">
+                  <div class="comp__img-w">
+                    <a href=""><img src="img/comp-1.png"></a>
+                    <a href="" class="edit__item">Редактировать</a>
+                  </div>
+                  <div class="comp__content">
+                    <div class="comp__top">
+                      <a class="comp__title" href="">СХК-Колхоз «Чудское озеро»</a>                    
+                      <div class="onmoder">На модерации</div>
+                    </div>
+                    <p>Компания занимается разведением крупного рогатого скота и производством молока</p>
+                    <span>Удмуртская Республика, с. Нижнее Асаново</span>
+                    <a href="tel:+7 (495) 456-08-93" class="comp__tel">+7 (495) 456-08-93</a>
+                    <a href="www.molodaya-gv.ru" class="comp__site">www.molodaya-gv.ru</a>
+                    <div class="comp__gal">
+                      <a data-fancybox="gallery" href="img/gal-3.jpg"><img src="img/gal-3.jpg" alt=""></a>
+                      <a data-fancybox="gallery" href="img/gal-3.jpg"><img src="img/gal-3.jpg" alt=""></a>
+                      <a data-fancybox="gallery" href="img/gal-3.jpg"><img src="img/gal-3.jpg" alt=""></a>
+                      <a data-fancybox="gallery" href="img/gal-3.jpg"><img src="img/gal-3.jpg" alt=""></a>
+                      <a data-fancybox="gallery" href="img/gal-3.jpg"><img src="img/gal-3.jpg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile__item">
+              <div class="lsort">
+                <ul>
+                  <li><a href="">Компании</a></li>
+                  <li><a href="">Товары</a></li>
+                  <li class="active"><a href="">Объявления</a></li>
+                </ul>
+                @@include('var/_sort.html')
+              </div>
+              <div class="profile__list">
+                <div class="comp__item">
+                  <div class="comp__img-w">
+                    <a href=""><img src="img/konv.jpg"></a>
+                    <a href="" class="edit__item">Редактировать</a>
+                  </div>
+                  <div class="comp__content">
+                    <div class="comp__top">
+                      <p class="offer">Предложение</p>
+                      <a class="comp__title" href="">Конвейер обвалки и жиловки мяса со шнековым дозатором фарша</a>
+                      <div class="onpub">Опубликовано</div>
+                      <!-- <div class="onmoder">На модерации</div>
+                        <div class="ondenied">Отказано</div> -->
+                      </div>
+                      <div class="profile__info">
+                        <p>Московская область, г. Москва</p>
+                        <p>ЗАО ПФ "Ново-Барышевская"</p>
+                      </div>                      
+                      <p>Мы компания производитель с уникальной и очень простой по домашнему вкусной рецептурой мы используем для начинки своих пельменей только свежее охлажденное  мясо, тесто не разваривается держит форму, в варениках настоящие ягоды.</p>
+                      <div class="profile__bot">
+                        <div>
+                          <span>от 2 800 500 Р</span>
+                          <p>28.05.2022 - 30.07.2022</p>
+                        </div>
+                        <p>Минимальный заказ: от 3 шт.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            <div class="profile__item">
+              <div class="lsort">
+                <ul>
+                  <li><a href="">Компании</a></li>
+                  <li class="active"><a href="">Товары</a></li>
+                  <li><a href="">Объявления</a></li>
+                </ul>
+                @@include('var/_sort.html')
+              </div>
+              <div class="profile__list">
+                <div class="comp__item">
+                  <div class="comp__img-w">
+                    <a href=""><img src="img/prod-8.png"></a>
+                    <a href="" class="edit__item">Редактировать</a>
+                  </div>
+                  <div class="comp__content">
+                    <div class="comp__top">
+                      <p class="sproduct">Масло растительное</p>
+                      <a class="comp__title" href="">Масло нерафинированное дезодорированное (3, 5, 10 литров)</a>
+                                            
+                        <div class="ondenied">Отказано</div>
+                      </div>
+                      <div class="profile__info">
+                        <p>Московская область, г. Москва</p>
+                        <p>ЗАО ПФ "Ново-Барышевская"</p>
+                      </div>                                            
+                      <div class="profile__bot">
+                        <div>                          
+                          <span>от 299 Р/10 л бутыль</span>                 
+                        </div>                        
+                        <p>Минимальный заказ: от 300 000 Р</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+
+
+        </div><!--col-l-->
+        <div class="col-r">
+        @@include('var/_account__actions.html')
+      </div>
+      </div>   
+    </div>   
+  </main>
+  @@include('var/_footer.html')
+</div>
+@@include('var/_scripts.html')
+</body>
+</html>

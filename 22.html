@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>22. ACC-EDIT</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main inner-page">
+     <div class="contain">      
+      <div class="row">
+       <div class="col-l">
+        <ul class="bread">
+          <li><a href="">Главная</a></li>                      
+          <li>Личный кабинет</li>
+        </ul>
+        <div class="h1-w items-center">
+          <h1>Редактировать профиль</h1>  
+          <a class="edit__link" href="">Просмотр</a>            
+        </div>
+        <form class="edit__form edit__form-1">
+          <div class="edit__block">
+            <label class="user-photo__label">
+              <input size="40" accept=".jpg,.jpeg,.png"
+              class="multi-file-input" type="file" id="fileMulti3" aria-invalid="false">
+              <div class="user-photo"><img src="img/add-circle.svg"></div>
+              <div class="user-photo__r">
+                <p>Ваша фотография или другое изображение</p>
+                <div>Максимальный размер файла: 1 МБ. <br>
+                  Допустимые типы файлов: png jpg jpeg
+                </div>
+              </div>
+            </label>
+            <div class="w600">
+              <div class="restore__w">
+                <input type="text" placeholder="Текущий пароль">
+                <a href="" class="pass">Восстановить пароль</a>
+              </div>
+              <div class="edit__row">
+                <div class="edit__col-100">
+                  <p>Введите Ваш текущий пароль для смены e-mail или пароль.</p>
+                </div>
+              </div>
+              <div class="edit__row">
+                <div class="edit__col-100">
+                  <input type="text" placeholder="dom-brus.com@yandex.ru">
+                </div>
+              </div>
+              <div class="edit__row">
+                <div class="edit__col-100">
+                  <p>Все почтовые сообщения с сайта будут отсылаться на этот адрес.
+                  Этот адрес не будет публиковаться и будет использован только по вашему желанию</p>
+                </div>
+              </div>
+              <div class="edit__row">
+                <div class="edit__col-100">                  
+                  <input class="pass" type="text" id="password-input" value="***************" placeholder="" onkeydown="formatInput(this.id)" value="">
+                  <div class="strongpass">
+                    <ul>
+                      <li class="_green"></li>
+                      <li class="_green"></li>
+                      <li class="_green"></li>
+                      <li></li>
+                    </ul>
+                    <span>Надёжный пароль</span>  
+                  </div>
+                </div>
+              </div>
+              <div class="edit__row">
+                <div class="edit__col-100"> 
+                  <input class="pass2" type="text" id="password-input-2" value="dom-brus&^$#428" placeholder="" onkeydown="formatInput(this.id)" value="">
+                </div>
+              </div>
+              <div class="edit__row">
+                <div class="edit__col-100">                  
+                  <p>Для изменения текущего пароля, введите новый пароль в обоих полях</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit__block">
+            <div class="h3">Личная информация</div>
+            <div class="edit__row">
+              <div class="edit__col-100">
+                <input class="w600" type="text" placeholder="ФИО или название компании">
+              </div>
+            </div>
+            <div class="edit__row _last">
+              <div class="edit__col-100">                
+                <textarea class="edit__area" placeholder="Опишите вкратце деятельность вашей компании."></textarea>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="edit__block">
+            <div class="h3">Контакты</div>
+            <div class="edit__row">
+              <div class="edit__col-100">
+                <input type="text" placeholder="Адрес" class="_geo">
+              </div>
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <input type="text" placeholder="Телефон" class="">
+                <div class="edit__plus2"></div>
+              </div>
+              <div class="edit__col-50">
+                <input type="text" placeholder="E-mail" class="">
+                <div class="edit__plus2"></div>
+              </div>
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <input type="text" placeholder="URL сайта" class="">                
+              </div>
+              <div class="edit__col-50">
+                <input type="text" placeholder="Заголовок сайта" class="">                
+              </div>
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <p>Адрес сайта с http(s): можно прописать UTM метку для анализа переходов</p>
+              </div>
+              <div class="edit__col-50">
+                <p>Заголовок ссылки ограничен максимум 128 символами.</p>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="edit__actions">
+            <button class="btn">Сохранить изменения</button>
+          </div>
+        </form>
+      </div><!--col-l-->
+      <div class="col-r">
+        @@include('var/_account__actions.html')
+      </div><!--col-r-->
+    </div>   
+  </div>   
+</main>
+@@include('var/_footer.html')
+</div>
+@@include('var/_scripts.html')
+</body>
+</html>

@@ -6,7 +6,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>20. ACC-ADDSTUFF</title>
+  <title>22. ACC-EDIT</title>
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/select2.min.css">
@@ -59,132 +59,125 @@
           <li><a href="">Главная</a></li>                      
           <li>Личный кабинет</li>
         </ul>
-        <div class="h1-w">
-          <h1>Добавить продукцию</h1>              
-        </div>
-        <div class="message">
-          <p>Для прохождения модерации рекомендуется: <span data-hide="Скрыть" data-show="Развернуть" class="message__hide">Скрыть</span></p>
-          <div class="message__content">
-            <ul>
-              <li>Описывать свою компанию или продукцию более объективно, оперируя измереяемыми показателями, а не субъективным мнением (сказать или написать, что ваш продукт самый лучший, конечно же можно (так не делайте), но это нельзя измерить, лучше аргументированно описать его преимущества, предоставить характеристики и другие изменяемые показатели);</li>
-              <li>Не пытаться прописывать ссылки в описании, для этого есть специальное поле;</li>
-              <li>Ссылка на сайт должна быть в виде URL, а не содержать ключевые слова;</li>
-              <li>Отформатировать текст для удобства восприятия</li>
-            </ul>          
-          </div>
+        <div class="h1-w items-center">
+          <h1>Редактировать профиль</h1>  
+          <a class="edit__link" href="">Просмотр</a>            
         </div>
         <form class="edit__form edit__form-1">
           <div class="edit__block">
-            <div class="h3">Описание</div>
-            <div class="edit__row">
-              <div class="edit__col-100">
-                <select>
-                  <option value="Товар от компании Вимм-Биль-Данн">Товар от компании Вимм-Биль-Данн</option>
-                  <option value="Москва">Москва</option>
-                </select>
-                <button class="btn"><i></i> Добавить новую компанию</button>
+            <label class="user-photo__label">
+              <input size="40" accept=".jpg,.jpeg,.png"
+              class="multi-file-input" type="file" id="fileMulti3" aria-invalid="false">
+              <div class="user-photo"><img src="img/add-circle.svg"></div>
+              <div class="user-photo__r">
+                <p>Ваша фотография или другое изображение</p>
+                <div>Максимальный размер файла: 1 МБ. <br>
+                  Допустимые типы файлов: png jpg jpeg
+                </div>
+              </div>
+            </label>
+            <div class="w600">
+              <div class="restore__w">
+                <input type="text" placeholder="Текущий пароль">
+                <a href="" class="pass">Восстановить пароль</a>
+              </div>
+              <div class="edit__row">
+                <div class="edit__col-100">
+                  <p>Введите Ваш текущий пароль для смены e-mail или пароль.</p>
+                </div>
+              </div>
+              <div class="edit__row">
+                <div class="edit__col-100">
+                  <input type="text" placeholder="dom-brus.com@yandex.ru">
+                </div>
+              </div>
+              <div class="edit__row">
+                <div class="edit__col-100">
+                  <p>Все почтовые сообщения с сайта будут отсылаться на этот адрес.
+                  Этот адрес не будет публиковаться и будет использован только по вашему желанию</p>
+                </div>
+              </div>
+              <div class="edit__row">
+                <div class="edit__col-100">                  
+                  <input class="pass" type="text" id="password-input" value="***************" placeholder="" onkeydown="formatInput(this.id)" value="">
+                  <div class="strongpass">
+                    <ul>
+                      <li class="_green"></li>
+                      <li class="_green"></li>
+                      <li class="_green"></li>
+                      <li></li>
+                    </ul>
+                    <span>Надёжный пароль</span>  
+                  </div>
+                </div>
+              </div>
+              <div class="edit__row">
+                <div class="edit__col-100"> 
+                  <input class="pass2" type="text" id="password-input-2" value="dom-brus&^$#428" placeholder="" onkeydown="formatInput(this.id)" value="">
+                </div>
+              </div>
+              <div class="edit__row">
+                <div class="edit__col-100">                  
+                  <p>Для изменения текущего пароля, введите новый пароль в обоих полях</p>
+                </div>
               </div>
             </div>
-            <div class="edit__row">
-              <div class="edit__col-100">
-                <input type="text" placeholder="Название товара">
-              </div>
-            </div>
-
-
-
-            
-            
-            <div class="edit__row">
-              <div class="edit__col-33">
-                <select>
-                  <option value="Продукты питания">Продукты питания</option>
-                  <option value="Бытовая химия">Бытовая химия</option>
-                </select>
-              </div>
-              <div class="edit__col-33">
-                <select>
-                  <option value="Бакалея">Бакалея</option>
-                  <option value="Маргарин">Маргарин</option>
-                </select>
-              </div>
-              <div class="edit__col-33">
-                <select>
-                  <option value="Маргарин">Маргарин</option>                  
-                  <option value="Бакалея">Бакалея</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="edit__row">
-              <div class="edit__col-50">
-                <select>
-                  <option value="Выберите регион">Выберите регион</option>
-                  <option value="Москва">Москва</option>
-                </select>
-              </div>
-              <div class="edit__col-50">
-                <input type="text" placeholder="Населённый пункт" class="_search">
-              </div>
-            </div>
-            <div class="edit__desc">
-              <div><img src="img/mce.jpg" alt=""></div>
-              <textarea placeholder="Описание продукции"></textarea>  
-            </div>
-            <div class="edit__row">
-              <div class="edit__col-100">
-                <p>Описывайте компанию объективно, избегая рекламных клише и необоснованных статусов и регалий              
-                </p>
-              </div>
-            </div>
-
-            <div class="edit__row">
-              <div class="edit__col-c">
-                <input type="text" placeholder="Цена" class="">
-                <select>
-                  <option value="Р/шт">Р/шт</option>
-                  <option value="Москва">Москва</option>
-                </select>
-              </div>
-              <div class="edit__col-c">
-                <input type="text" placeholder="Цена" class="">
-                <select>
-                  <option value="Р/шт">Р/шт</option>
-                  <option value="Москва">Москва</option>
-                </select>
-              </div>
-            </div>
-
           </div>
           <div class="edit__block">
-            <div class="h3">Фотографии продукции</div>
+            <div class="h3">Личная информация</div>
             <div class="edit__row">
-              <div class="edit__col-50">
-                <label class="addform_file-label">                  
-                  <input size="40" accept=".jpg,.jpeg,.png"
-                  class="multi-file-input" type="file" id="fileMulti2" aria-invalid="false">
-                  <span class="addform_file-box">
-                    <div class="filetext">Добавить фото продукции</div>
-                    <span>Добавить фото</span>
-                  </span>
-                </label>
-              </div>
-              <div class="edit__col-50 items-center">
-                <div class="addform__info">Максимальный размер файла: 1 МБ. Допустимые типы файлов: png jpg jpeg <br>
-                Images must be at least 261x182 pixels.</div>
+              <div class="edit__col-100">
+                <input class="w600" type="text" placeholder="ФИО или название компании">
               </div>
             </div>
-            <div class="edit__thumbs">
-              <div><img src="img/editgal-1.jpg" alt=""><span></span></div>
-              <div><img src="img/editgal-2.jpg" alt=""><span></span></div>
-              <div><img src="img/editgal-3.jpg" alt=""><span></span></div>            
+            <div class="edit__row _last">
+              <div class="edit__col-100">                
+                <textarea class="edit__area" placeholder="Опишите вкратце деятельность вашей компании."></textarea>
+              </div>
             </div>
-            <div class="thumbs__del">Удалить все фото</div>
+
+
+
           </div>
 
+          <div class="edit__block">
+            <div class="h3">Контакты</div>
+            <div class="edit__row">
+              <div class="edit__col-100">
+                <input type="text" placeholder="Адрес" class="_geo">
+              </div>
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <input type="text" placeholder="Телефон" class="">
+                <div class="edit__plus2"></div>
+              </div>
+              <div class="edit__col-50">
+                <input type="text" placeholder="E-mail" class="">
+                <div class="edit__plus2"></div>
+              </div>
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <input type="text" placeholder="URL сайта" class="">                
+              </div>
+              <div class="edit__col-50">
+                <input type="text" placeholder="Заголовок сайта" class="">                
+              </div>
+            </div>
+            <div class="edit__row">
+              <div class="edit__col-50">
+                <p>Адрес сайта с http(s): можно прописать UTM метку для анализа переходов</p>
+              </div>
+              <div class="edit__col-50">
+                <p>Заголовок ссылки ограничен максимум 128 символами.</p>
+              </div>
+            </div>
+
+
+          </div>
           <div class="edit__actions">
-            <button class="btn">Добавить продукт</button>
-            <div class="romeve__prod">Удалить товар</div>
+            <button class="btn">Сохранить изменения</button>
           </div>
         </form>
       </div><!--col-l-->

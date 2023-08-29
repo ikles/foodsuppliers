@@ -78,6 +78,39 @@ jQuery(document).ready(function( $ ) {
   }
 
 
+///////////////////
+
+  let inputFile3 = document.querySelector('#fileMulti3');
+  let imgWrapper3 = document.querySelector('.user-photo');
+
+
+  function download4(input) {
+    let file = input.files[0];
+
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+
+    reader.onload = ev => {
+      const src = ev.target.result      
+      imgWrapper3.innerHTML = `<img src="${src}" alt="${file.name}" />`
+      /*imgWrapper3.innerHTML = `${file.name}`*/
+    }
+  }
+
+
+  if ($('#fileMulti3').length) {    
+    inputFile3.addEventListener("change", function () {
+      download4(this);
+      console.log(this);
+    });
+  }
+
+
+///////////////////
+
+
+
+
   ///
 
   $('.edit__thumbs > div').click(function () {
@@ -414,6 +447,22 @@ jQuery(document).ready(function( $ ) {
  });
 
 
+  $('.foodprods__show').click(function (e) {
+    e.preventDefault();
+    const list = $(this).prev();
+
+    list.toggleClass('open');
+
+    if( list.hasClass('open') ) {
+      $(this).text($(this).attr('data-hide'));
+      list.addClass('open');      
+    }
+    else {
+     $(this).text($(this).attr('data-show')); 
+     list.removeClass('open');     
+   }
+ });
+
 
 
   $.fn.HvrSlider = function () {
@@ -594,3 +643,66 @@ $('.eye-3').click(function (e) {
 
 }); //ready
 
+
+//window.onload = () => {
+//  sessionStorage.text = "";
+//  sessionStorage.visible = false
+//}
+
+//We will use the text and visible variables for demonstration purposes as session storage does not work with code snippets. The star can really be anything you want
+
+const star = "*";
+let text = "";
+let isVisible = false;
+
+function toggle(id) {
+  const button = document.getElementById(id);
+  const input = document.getElementById("password-input");
+  
+  switch (isVisible) {
+  case false:
+    button.innerText = "Hide Password";
+    input.value = text;
+    isVisible = true;
+    break;
+  case true:
+    button.innerText = "Show Password";
+    input.value = star.repeat(text.length);
+    isVisible = false;
+  }
+  
+  console.log(`Text When Button Clicked: ${text}`);
+}
+
+function formatInput(id) {
+
+
+  const elem = document.getElementById(id);
+  const keyPressed = event.key;
+
+  
+  if (keyPressed == "Backspace") {
+    text = text.substring(0, text.length - 1);
+    elem.value = elem.value.substring(0, elem.value.length);
+    console.log(`Text at Backspace: ${text}`)
+    return;
+  }
+  
+  if (keyPressed.length == 1) {
+    text = text + keyPressed;
+    elem.value = text;
+  }
+  
+  
+  
+  switch (isVisible) {
+  case false:
+    elem.value = star.repeat(text.length - 1)
+    console.log(`Text When Password = Hidden: ${text}`)
+    break;
+  case true:
+    elem.value = text;      
+    elem.value = elem.value.substring(0, text.length - 1)
+      /*console.log(`Text When Password = Visible: ${text}`)*/
+  }
+}
