@@ -3519,11 +3519,9 @@ ul.btns__list {
   width: 25%;
   padding: 0 30px;
   padding-left: 42px;
-  margin-bottom: 101px;
-  width: 25%;
-  ul {
-    border-bottom: $bord;
-    padding-bottom: 0;
+  margin-bottom: 101px;  
+  ul {    
+    padding-bottom: 8px;
     overflow: hidden;
     &.open {
       li {
@@ -3539,8 +3537,8 @@ ul.btns__list {
       justify-content: space-between;
       position: relative;
       padding-left: 21px;
-      margin-bottom: 20px;
-      display: none;
+      margin-bottom: 12px;
+      display: none;      
       &:nth-child(1),
       &:nth-child(2),
       &:nth-child(3),
@@ -3558,7 +3556,7 @@ ul.btns__list {
         display: inline-block;        
         flex: none;
         position: absolute;
-        top: 1px;
+        top: 5px;
         left: 0;        
         color: #2D3748;
         font-size: 16px;
@@ -3568,7 +3566,7 @@ ul.btns__list {
         color: rgb(74, 85, 104);
         font-size: 16px;
         font-weight: 600;
-        line-height: 1;
+        line-height: 1.5;
       }
       
       span {
@@ -6362,8 +6360,11 @@ p.sproduct {
   letter-spacing: -0.15px;
   display: inline-block;
   padding-left: 22px;
-  background: url("../img/plus3.svg") $nr $lc;
-  margin-top: 27px;
+  background: url("../img/plus3.svg") $nr left bottom 2px;
+  border-top: $bord;
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 27px;
   &:hover {
     text-decoration: none;
   }
