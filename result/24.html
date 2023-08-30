@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>24. ACC-ORDER</title>
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+      <header class="header">
+    <div class="contain">
+      <div class="header__row">
+        <a href="index.html" class="logo">
+          <span>Food</span> Suppliers
+        </a>
+        <div class="header__col">
+          <ul>
+            <li><a href="" class="active">Компании </a></li>
+            <li><a href="">Продукция</a></li>
+            <li><a href="">Доска объявлений</a></li>
+            <li><a href="">Публикации</a></li>
+          </ul>
+          <div class="header__r">
+            <div class="header__actions">
+              <a href=""><img src="img/search-normal.svg" /></a>
+              <a href=""><img src="img/cab.svg" /></a>
+              <a class="fav" href="">
+                <img src="img/fav.svg" />
+                <span>3</span>
+              </a>
+            </div>
+            <a href="" class="btn"><i></i> Добавить компанию</a>
+          </div>
+        </div>
+      </div>
+      <span class="burger"></span>
+    </div>
+  </header>
+    <main class="main inner-page">
+      <div class="contain">
+        <div class="row">
+          <div class="col-l">
+            <ul class="bread">
+              <li><a href="">Главная</a></li>
+              <li>Личный кабинет</li>
+            </ul>
+            <div class="h1-w">
+              <h1>Мои заказы</h1>
+            </div>
+
+            <div class="quest__fon">
+
+              <div class="lsort">
+                <ul>
+                  <li class="active"><a href="">Все</a></li>
+                  <li><a href="">Выполненные</a></li>
+                  <li><a href="">Невыполненные</a></li>
+                </ul>
+                <div class="sort">            
+  <p>Сортировать:</p>
+  <a href=""> По статусу<span></span></a>
+  <!-- Дате добавления -->
+</div>
+              </div>
+
+              <div class="quest__bot">
+                <div class="quest__it">
+                  <a href="" class="quest__photo">
+                    <img src="img/photo-quest-1.jpg">
+                  </a>
+                  <div class="quest__cont">
+                    <span>Деловой Иван</span>
+                    <p>Здравствуйте. Интересует товар «Куртка HAYS Куртка женская “Active” 30073» <a href="">https://optlist.ru/company/eliaglobal/product/kurtka-hays-kurtka-zhenskaia-active-30073</a>
+                    </p>
+                    <div class="quest__rep">
+                      <div class="quest__name-w">
+                        <span>Представитель компании AVON</span>
+                        <a href="mailto:delovoy@gmail.com">delovoy@gmail.com</a>
+                      </div>
+                      <a href="" class="quest__btn">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="quest__it">
+                  <a href="" class="quest__photo">
+                    <img src="img/photo-quest-2.jpg">
+                  </a>
+                  <div class="quest__cont">
+                    <span>Байчикова Светлана</span>
+                    <p>Здравствуйте. Интересует товар «Куртка HAYS Куртка женская “Active” 30073» <a href="">https://optlist.ru/company/eliaglobal/product/kurtka-hays-kurtka-zhenskaia-active-30073</a>
+                    </p>
+                    <div class="quest__rep">
+                      <div class="quest__name-w">
+                        <span class="person">Частное лицо</span>
+                        <a href="mailto:svetlana1990@yandex.ru">svetlana1990@yandex.ru</a>
+                      </div>
+                      <a href="" class="quest__btn">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="quest__it _disable">
+                  <a href="" class="quest__photo">
+                    <img src="img/noimage2.png">
+                  </a>
+                  <div class="quest__cont">
+                    <span>Байчикова Светлана</span>
+                    <p>Здравствуйте. Интересует товар «Куртка HAYS Куртка женская “Active” 30073» <a href="">https://optlist.ru/company/eliaglobal/product/kurtka-hays-kurtka-zhenskaia-active-30073</a>
+                    </p>
+                    <div class="quest__rep">
+                      <div class="quest__name-w">
+                        <span class="person">Частное лицо</span>
+                        <a href="mailto:svetlana1990@yandex.ru">svetlana1990@yandex.ru</a>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__actions quest__actions">
+                <button><i></i> Показать ещё</button>
+                <ul class="spagin">
+   <li><a class="spagin-control spagin-prev" href="#"><span>Предыдущая</span></a></li>
+   <li><a href="#">1</a></li>
+   <li><a class="active" href="#">2</a></li>
+   <li><a href="#">3</a></li>      
+   <li><a class="spagin-control spagin-next" href="#"><span>Следующая</span></a></li>    
+</ul>
+              </div>
+            </div>
+
+
+          </div>
+          <!--col-l-->
+          <div class="col-r">
+            <div class="rcats account__actions">            
+  <div class="rcats__item">
+    <div class="aacount__person">
+      <div class="aacount__img-w">
+        <span>
+          <img src="img/man.jpg">
+        </span>
+      </div>
+      <div class="aacount__r">
+        <p>Иван Деловой</p>
+        <span>На сайте: 1 месяц 4 дня</span>
+        <a href="" class="acc-alert"></a>
+      </div>
+    </div>
+    <ul class="rcats__ul account__ul">
+      <li><a href="">Мои заказы (2)</a></li>              
+      <li><a href="">Мой тариф</a></li>
+      <li><a href="">Добавить компанию</a></li>
+      <li><a class="active" href="">Добавить объявление</a></li>
+      <li><a href="">Добавить продукцию</a></li>
+      <li><a href="">Мои объявления</a></li>
+      <li><a href="">Мои предприятия</a></li>
+      <li><a href="">Мои продукты</a></li>
+      <li><a href="">Редактировать данные</a></li>
+    </ul>
+  </div>
+  <a href="" class="exit__link">Выход</a>
+</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+  <div class="contain">
+    <div class="footer__row">
+      <div class="footer__1">
+        <a href="index.html" class="footer__logo">
+          <span>Food</span> Suppliers
+        </a>
+        <div class="copy">
+          © Все права защищены. Food Suppliers 2022. <br />
+          Информация о товарах и услугах не является публичной офертой
+        </div>
+        <ul class="fsocials">
+          <li>
+            <a href=""><img src="img/vk.svg" class="fsocials-img" /><span>VKontakte</span></a>
+          </li>
+          <li>
+            <a href=""><img src="img/tg.svg" class="fsocials-img" /><span>Telegram</span></a>
+          </li>
+          <li>
+            <a href=""><img src="img/zen.svg" class="fsocials-img" /><span>Zen</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__mnu">
+        <p>
+          <img src="img/ficon-1.svg" class="footer__mnu-img" />Каталог поставщиков</p>
+          <ul>
+            <li>
+              <a href="">Поставщики <sup>3 065</sup></a>
+            </li>
+            <li>
+              <a href="">Продукция <sup>4 987</sup></a>
+            </li>
+            <li>
+              <a href="">Спрос <sup>45</sup></a>
+            </li>
+            <li>
+              <a href="">Предложение <sup>569</sup></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__mnu">
+          <p><img src="img/ficon-2.svg" class="footer__mnu-img" />Компании и продукция</p>
+          <ul>
+            <li class="big"><a href="">Добавить компанию</a></li>
+            <li><a href="">Восстановление доступа </a></li>
+            <li><a href="">Все компании</a></li>
+            <li><a href="">Все товары</a></li>
+          </ul>
+        </div>
+        <div class="footer__mnu">
+          <p><img src="img/ficon-3.svg" class="footer__mnu-img" />Медиа</p>
+          <ul>
+            <li><a href="">Публикации</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Мероприятия</a></li>
+            <li><a href="">Отзывы</a></li>
+          </ul>
+        </div>
+        <div class="footer__mnu">
+          <p><img src="img/ficon-4.svg" class="footer__mnu-img" />Информация</p>
+          <ul>
+            <li><a href="">О сайте</a></li>
+            <li><a href="">Реклама</a></li>
+            <li><a href="">Правила сайта</a></li>
+            <li><a href="">Обратная связь</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>  
+  </footer>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>  
+<script src="js/nouislider.js"></script>
+<script src="js/wNumb.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+
+</html>

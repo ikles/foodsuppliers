@@ -412,6 +412,7 @@ jQuery(document).ready(function( $ ) {
   }
 
   tabs('.ncats__tabs');
+  tabs('.modal__tabs');
 
 
 
@@ -612,8 +613,9 @@ $('.eye-3').click(function (e) {
 
   }
 
-  popup('.link2', '.modal-overlay_2', '.modal-close_2');
-  popup('.link', '.modal-overlay_1', '.modal-close_1');
+  popup('#modal1', '.modal-overlay_1', '.modal-close_1');
+  popup('#modal2', '.modal-overlay_2', '.modal-close_2');
+  popup('#modal3', '.modal-overlay_3', '.modal-close_3');
 
 
   $('a[href*=\\#]:not([href=\\#])').click(function () {

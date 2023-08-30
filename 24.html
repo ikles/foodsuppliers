@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>24. ACC-ORDER</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main inner-page">
+      <div class="contain">
+        <div class="row">
+          <div class="col-l">
+            <ul class="bread">
+              <li><a href="">Главная</a></li>
+              <li>Личный кабинет</li>
+            </ul>
+            <div class="h1-w">
+              <h1>Мои заказы</h1>
+            </div>
+
+            <div class="quest__fon">
+
+              <div class="lsort">
+                <ul>
+                  <li class="active"><a href="">Все</a></li>
+                  <li><a href="">Выполненные</a></li>
+                  <li><a href="">Невыполненные</a></li>
+                </ul>
+                @@include('var/_sort.html')
+              </div>
+
+              <div class="quest__bot">
+                <div class="quest__it">
+                  <a href="" class="quest__photo">
+                    <img src="img/photo-quest-1.jpg">
+                  </a>
+                  <div class="quest__cont">
+                    <span>Деловой Иван</span>
+                    <p>Здравствуйте. Интересует товар «Куртка HAYS Куртка женская “Active” 30073» <a href="">https://optlist.ru/company/eliaglobal/product/kurtka-hays-kurtka-zhenskaia-active-30073</a>
+                    </p>
+                    <div class="quest__rep">
+                      <div class="quest__name-w">
+                        <span>Представитель компании AVON</span>
+                        <a href="mailto:delovoy@gmail.com">delovoy@gmail.com</a>
+                      </div>
+                      <a href="" class="quest__btn">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="quest__it">
+                  <a href="" class="quest__photo">
+                    <img src="img/photo-quest-2.jpg">
+                  </a>
+                  <div class="quest__cont">
+                    <span>Байчикова Светлана</span>
+                    <p>Здравствуйте. Интересует товар «Куртка HAYS Куртка женская “Active” 30073» <a href="">https://optlist.ru/company/eliaglobal/product/kurtka-hays-kurtka-zhenskaia-active-30073</a>
+                    </p>
+                    <div class="quest__rep">
+                      <div class="quest__name-w">
+                        <span class="person">Частное лицо</span>
+                        <a href="mailto:svetlana1990@yandex.ru">svetlana1990@yandex.ru</a>
+                      </div>
+                      <a href="" class="quest__btn">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="quest__it _disable">
+                  <a href="" class="quest__photo">
+                    <img src="img/noimage2.png">
+                  </a>
+                  <div class="quest__cont">
+                    <span>Байчикова Светлана</span>
+                    <p>Здравствуйте. Интересует товар «Куртка HAYS Куртка женская “Active” 30073» <a href="">https://optlist.ru/company/eliaglobal/product/kurtka-hays-kurtka-zhenskaia-active-30073</a>
+                    </p>
+                    <div class="quest__rep">
+                      <div class="quest__name-w">
+                        <span class="person">Частное лицо</span>
+                        <a href="mailto:svetlana1990@yandex.ru">svetlana1990@yandex.ru</a>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__actions quest__actions">
+                <button><i></i> Показать ещё</button>
+                @@include('var/_spagin2.html')
+              </div>
+            </div>
+
+
+          </div>
+          <!--col-l-->
+          <div class="col-r">
+            @@include('var/_account__actions.html')
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  @@include('var/_scripts.html')
+</body>
+
+</html>
