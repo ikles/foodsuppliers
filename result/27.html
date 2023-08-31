@@ -54,9 +54,13 @@
     <main class="main inner-page">
      <div class="contain">
       <ul class="modals__list">
-        <li><a id="modal1" href="">1. LOGIN-SIGN</a></li>
-        <li><a id="modal2" href="">2. RECOVERY-F</a></li>
-        <li><a id="modal3" href="">3. QUICK-ORDER-F</a></li>
+        <li><a id="modal1" href="">1. Регистрация / Личный кабинет</a></li>
+        <li><a id="modal2" href="">2. Восстановить пароль</a></li>
+        <li><a id="modal3" href="">3. Оформить быстрый заказ</a></li>
+        <li><a id="modal4" href="">4. Выбрать регион</a></li>
+        <li><a id="modal5" href="">5. Сообщение для:  Молодая Гвардия</a></li>
+        <li><a id="modal6" href="">6. Сфера деятельности </a></li>
+        <li><a id="modal7" href="">7. Добавить отзыв</a></li>
       </ul>
     </div>
   </main>
@@ -143,15 +147,15 @@
       <div class="tabs modal__tabs">
         <ul class="tabs__list">
           <li class="tabs__list-item active">Регистрация</li>
-          <li class="tabs__list-item">Личный кабинет</li>  
+          <li class="tabs__list-item ">Личный кабинет</li>  
         </ul>
         <ul class="tabs__content-list">
           <li class="tabs__content-list-item active">
-            <form class="modal-form">
-              <input type="text" placeholder="Логин">
+            <form class="modal-form">              
+              <input type="text" placeholder="Логин">              
               <input type="text" placeholder="E-mail">
               <input type="text" placeholder="ФИО">
-              <label>
+              <label class="checkbox-lbl">
                 <input type="checkbox" checked>
                 <span></span>  
                 <div>Регистрируясь вы соглашаетесь с <a href="">правилами сайта</a></div>
@@ -167,12 +171,33 @@
               </div>
             </form>
           </li>
-          <li class="tabs__content-list-item">22</li>  
-        </ul>
-      </div>
-
+          <li class="tabs__content-list-item ">
+           <form class="modal-form">
+            <label class="input-lbl">
+              <span>Логин</span>
+              <input class="active" type="text" value="delovoy_ivan">
+            </label>
+            <label class="input-lbl">
+              <span>Пароль</span>
+              <input class="error pass2" type="text" value="qwerty$&^&*">
+              <div class="error-text">Недопустимый символ в пароле!</div>
+            </label>
+            <div class="modal-form__actions">
+              <button class="btn">Войти в кабинет</button>
+              <a class="forget" href="">Забыли логин/пароль?</a>
+            </div>
+            <div class="modal__socials">
+              <p><span>или войдите с помощью соц. сетей</span></p>
+              <a href=""><img src="img/goo.svg" alt="">Google +</a>
+              <a href=""><img src="img/vk2.svg" alt="">Вконтакте</a>
+            </div>
+          </form>
+        </li>
+      </ul>
     </div>
+
   </div>
+</div>
 </div>
 <div class="modal-overlay modal-overlay_2">        
   <div class="modal-form__layout"></div>
@@ -216,16 +241,203 @@
             </select>
           </div>
         </div>      
+        <div class="edit__row ">
+          <div class="edit__col-100">
+            <textarea>Здравствуйте. Интересует товар «Куртка HAYS Куртка женская “Active” 30073» https://optlist.ru/company/eliaglobal/product/kurtka-hays-kurtka-zhenskaia-active-30073</textarea>
+          </div>
+        </div>
+        <label class="checkbox-lbl bord">
+          <input type="checkbox" checked="">
+          <span></span>            
+          <div>Согласен на обработку персональных данных, в соответствии с <a href="">Политикой</a></div>
+        </label>
+        <div class="modal-form__actions">
+          <button class="btn ">Оформить быстрый заказ</button>
+          <img src="img/robot.jpg" alt="">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal-overlay modal-overlay_4">        
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block">     
+    <span class="modal-close modal-close_4"></span>
+    <div class="modal-form__inner">
+      <form class="modal-form__4">
+        <div class="h5">Выбрать регион</div>
+        <input type="text" class="_search" placeholder="Начните вводить название населённого пункта">
+        <ul class="cities__list">          
+          <li><a class="first" href="">Москва</a></li>
+          <li><a class="main" href="">Санкт-Петербург</a></li>
+          <li><a class="main" href="">Севастополь</a></li>
+          <li><a href="">Екатеринбург, Свердловская область</a></li>
+          <li><a href="">Нижний Новгород, Нижегородская область</a></li>
+          <li><a href="">Пермь, Пермский Край</a></li>
+          <li><a href="">Новосибирск, Новосибирская область</a></li>
+          <li><a href="">Казань, Татарстан республика</a></li>
+          <li><a href="">Челябинск, Челябинская область</a></li>
+          <li><a href="">Краснодар, Краснодарский Край</a></li>
+          <li><a href="">Самара, Самарская область</a></li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay modal-overlay_5">        
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block">     
+    <span class="modal-close modal-close_5"></span>
+    <div class="modal-form__inner">
+      <form class="modal-form__5">
+        <div class="h5 _mess">Сообщение для: <a href="">Молодая Гвардия</a></div>
         <div class="edit__row">
           <div class="edit__col-100">
             <textarea>Здравствуйте. Интересует товар «Куртка HAYS Куртка женская “Active” 30073» https://optlist.ru/company/eliaglobal/product/kurtka-hays-kurtka-zhenskaia-active-30073</textarea>
           </div>
-          </div>
-    </form>
+        </div>
+        <input type="text" placeholder="Ваше имя">
+        <input type="text" placeholder="E-mail для связи">
+        <div class="radio__row modal__radio">
+          <div>Я представляю:</div>
+          <label>
+            <input type="radio" name="type" checked="">
+            <span></span>
+            <div>Компанию или ИП</div>
+          </label>                  
+          <label class="edit__radio">
+            <input type="radio" name="type">
+            <span></span>
+            <div>Частное лицо</div>
+          </label>
+        </div>
+        <label class="checkbox-lbl">
+          <input type="checkbox" checked="">
+          <span></span>            
+          <div>Согласен на обработку персональных данных, в соответствии с <a href="">Политикой</a></div>
+        </label>
+        <div class="modal-form__actions">
+          <button class="btn ">Отправить сообщение</button>
+          <img src="img/robot.jpg" alt="">
+        </div>
+      </form>
+    </div>
   </div>
 </div>
+
+<div class="modal-overlay modal-overlay_6">        
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block">     
+    <span class="modal-close modal-close_6"></span>
+    <div class="modal-form__inner">
+      <form class="modal-form__6">
+        <div class="h5">Сфера деятельности</div>
+        <div class="edit__row">
+          <div class="edit__col-50">
+            <select>
+              <option value="Продукты питания">Продукты питания</option>              
+              <option value="Бакалея">Бакалея</option>
+            </select>
+          </div>
+          <div class="edit__col-50">
+            <select>
+              <option value="Бакалея">Бакалея</option>
+              <option value="Продукты питания">Продукты питания</option>              
+            </select>
+          </div>
+        </div>
+        <ul class="activity__list">          
+          <li><a href="">Дрожжи</a></li>
+          <li><a href="">Кулинарные ингредиенты</a></li>
+          <li><a href="">Макароны</a></li>
+          <li><a href="">Маргарин</a></li>
+          <li><a href="">Маринады</a></li>
+          <li><a href="">Мед</a></li>
+          <li><a href="">Мука</a></li>
+          <li><a href="">Приправы</a></li>
+          <li><a href="">Растительное масло</a></li>
+          <li><a href="">Сахар</a></li>
+          <li><a href="">Слойки</a></li>
+          <li><a href="">Мясная продукция</a></li>
+          <li><a href="">Баранина</a></li>
+          <li><a href="">Ветчина</a></li>
+          <li><a href="">Говядина</a></li>
+          <li><a href="">Деликатесное мясо</a></li>
+          <li><a href="">Мясо кролика</a></li>
+          <li><a href="">Мясо птицы</a></li>
+          <li><a href="">Оленина</a></li>
+          <li><a href="">Сардельки</a></li>
+          <li><a href="">Бобовые</a></li>
+          <li><a href="">Булгур</a></li>
+          <li><a href="">Геркулес</a></li>
+          <li><a href="">Гороховая крупа</a></li>
+          <li><a href="">Гречневая крупа</a></li>
+          <li><a href="">Киноа</a></li>
+          <li><a href="">Кукурузная крупа</a></li>
+          <li><a href="">Кукурузные хлопья</a></li>
+          <li><a href="">Манная крупа</a></li>
+          <li><a href="">Нут</a></li>
+        </ul>
+        <div class="jcenter">
+          <button class="btn w350">Выбрать категорию</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
 
+<div class="modal-overlay modal-overlay_7">        
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block">     
+    <span class="modal-close modal-close_7"></span>
+    <div class="modal-form__inner">
+      <form class="modal-form__7">
+        <div class="h5 _rev">Добавить отзыв</div>
+        <div class="radio__row">
+          <div>Ваши впечатления :</div>
+          <label>
+            <input type="radio" name="type" checked="">
+            <span></span>
+            <div>Мне понравилось</div>
+          </label>                  
+          <label class="edit__radio">
+            <input type="radio" name="type">
+            <span></span>
+            <div>Не понравилось</div>
+          </label>
+        </div>
+        <textarea placeholder="Текст отзыва"></textarea>
+        <input type="text" placeholder="Ваше имя">
+        <div class="edit__row">
+          <div class="edit__col-100">
+            <label class="addform_file-label">                  
+              <input size="40" accept=".jpg,.jpeg,.png"
+              class="multi-file-input" type="file" id="fileMulti2" aria-invalid="false">
+              <span class="addform_file-box">
+                <div class="filetext">Прикрепить файл</div>
+                <span>Прикрепить файл</span>
+              </span>
+            </label>
+          </div>
+        </div>
+        <p class="modal__lbl2">Максимальный размер файла: 1 МБ.
+        Допустимые типы файлов: png jpg jpeg</p>
+        <label class="checkbox-lbl bord">
+          <input type="checkbox" checked="">
+          <span></span>            
+          <div>Согласен на обработку персональных данных, в соответствии с <a href="">Политикой</a></div>
+        </label>
+        <div class="modal-form__actions">
+          <button class="btn ">Отправить отзыв</button>
+          <img src="img/robot.jpg" alt="">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick.js"></script>  

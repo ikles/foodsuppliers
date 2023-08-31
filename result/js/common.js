@@ -526,26 +526,26 @@ jQuery(document).ready(function( $ ) {
   });    
 
 
-  if( $(window).width() < 1200 ) {
+  /*if( $(window).width() < 1200 ) {    
     $(".infos__table-w").mCustomScrollbar({
       axis: "x",
       theme: "dark-3",
       mouseWheel: 1,
-      scrollInertia: '230'
+      scrollInertia: '130'
     });      
   }
 
 
   $(window).resize(function() {
-    if( $(window).width() < 1200 ) {
+    if( $(window).width() < 1200 ) {      
       $(".infos__table-w").mCustomScrollbar({
         axis: "x",
         theme: "dark-3",
         mouseWheel: 1,
-        scrollInertia: '230'
+        scrollInertia: '130'
       });      
     }
-  });
+  });*/
   
 
 
@@ -616,6 +616,10 @@ $('.eye-3').click(function (e) {
   popup('#modal1', '.modal-overlay_1', '.modal-close_1');
   popup('#modal2', '.modal-overlay_2', '.modal-close_2');
   popup('#modal3', '.modal-overlay_3', '.modal-close_3');
+  popup('#modal4', '.modal-overlay_4', '.modal-close_4');
+  popup('#modal5', '.modal-overlay_5', '.modal-close_5');
+  popup('#modal6', '.modal-overlay_6', '.modal-close_6');
+  popup('#modal7', '.modal-overlay_7', '.modal-close_7');
 
 
   $('a[href*=\\#]:not([href=\\#])').click(function () {
