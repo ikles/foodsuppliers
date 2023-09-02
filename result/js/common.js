@@ -24,6 +24,22 @@ jQuery(document).ready(function( $ ) {
   });
 
 
+  $('.production__top input[type="checkbox"]').click(function () {
+    const tooltip = $(this).parent().find('.tooltip');    
+    if ($(this).is(':checked')) {
+      tooltip.addClass('show');
+      setTimeout(function () {
+        tooltip.removeClass('show');
+      }, 1000);
+    } else {      
+      tooltip.removeClass('show');
+    }
+  })
+  
+
+
+
+
 
 
 
